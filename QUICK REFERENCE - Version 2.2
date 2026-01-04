@@ -1,0 +1,434 @@
+# 🚀 QUICK REFERENCE - Version 2.2 Fixes
+
+## 📋 Cheat Sheet für Developer
+
+### 1. Migration durchführen
+
+```bash
+# 1. Backup erstellen
+python debug_check.py
+
+# 2. Migration ausführen
+python migration_v2_2.py
+
+# 3. Verifizieren
+python verify_fixes.py
+
+# 4. Server neustarten
+docker-compose restart
+```
+
+---
+
+### 2. Neue Entry-Structure
+
+**Zugriff auf Disciplines:**
+
+```python
+from app.models import Entry
+
+# Entry laden
+entry = Entry.query.get("08-0869")
+
+# Disciplines abrufen
+if entry.discipline_ids:
+    print(f"Entry ist in Disciplines: {entry.discipline_ids}")
+else:
+    print("Entry ist in allen Disciplines")
+
+# Beispiel-Output:
+# ["tio:FrVmg2xPBuFUP", "tio:2mBanlYrVuN1x"]
+```
+
+**Query nach Discipline:**
+
+```python
+# Alle Entries einer Discipline
+discipline_id = "tio:FrVmg2xPBuFUP"
+
+entries = db.session.execute(text("""
+    SELECT * FROM entries 
+    WHERE discipline_ids @> :disc_id
+"""), {"disc_id": json.dumps([discipline_id])}).fetchall()
+```
+
+---
+
+### 3. Court-Zuordnung bei Matches
+
+**Match mit Court laden:**
+
+```python
+from app.models import Match, Court
+
+# Match laden
+match = Match.query.get("tio:abc123")
+
+if match.court_id:
+    # Court-Details
+    court = Court.query.get(match.court_id)
+    print(f"Match läuft auf {court.name} (Court {court.number})")
+else:
+    print("Match hat keine Court-Zuordnung")
+```
+
+**Alle Matches auf einem Court:**
+
+```python
+# Court laden
+court = Court.query.filter_by(number=1).first()
+
+# Alle Matches dieses Courts
+matches = Match.query.filter_by(court_id=court.id).all()
+
+print(f"Court {court.number} hatte {len(matches)} Matches")
+```
+
+---
+
+### 4. Sync mit neuen Features
+
+**Manueller Sync:**
+
+```bash
+# Einzelnes Tournament
+curl -X POST http://localhost:5000/tournaments/tio:AXb7FzJekjxGZ/sync
+
+# Logs checken
+tail -f logs/sync.log
+```
+
+**Erwartete Log-Ausgabe:**
+
+```
+🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+🔹 STEP 1: Tournament-Daten
+✅ Tournament: testmulti (finished)
+
+🔹 STEP 2: Courts
+📥 4 Courts in API-Response gefunden
+✅ Courts: 4 gespeichert
+📌 Court-Match-Mappings: 2
+
+🔹 STEP 3: Disciplines, Stages, Groups
+✅ Disciplines: 3
+✅ Stages: 6
+✅ Groups: 6
+
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+📥 30 Tournament-Entries geladen
+  📊 Lade Entries für Discipline 'Discipline 1'...
+  ✅ 10 Entries in Discipline D1
+✅ Entries: 30 gespeichert
+  📊 Discipline D1: 10 Entries
+  📊 Discipline D2: 10 Entries
+  📊 Discipline D3: 10 Entries
+
+🔹 VERIFICATION:
+📊 In DB gespeichert:
+  - Entries: 30
+  - Courts: 4
+  - Standings: 50
+  - Matches: 20
+
+✅ SYNC ERFOLGREICH ABGESCHLOSSEN
+```
+
+---
+
+### 5. Webhook-Handling mit Courts
+
+**Webhook empfangen:**
+
+```python
+# webhooks.py - CourtMatchChanged Event
+
+if event_type == "CourtMatchChanged":
+    court_id = event.get('court_id')
+    match_id = event.get('match_id')
+    
+    # Court aktualisieren
+    court = Court.query.get(court_id)
+    if court:
+        court.current_match_id = match_id
+        db.session.commit()
+        
+        # Match auch aktualisieren (mit Court-Zuordnung)
+        match = Match.query.get(match_id)
+        if match:
+            match.court_id = court_id
+            db.session.commit()
+```
+
+---
+
+### 6. API-Endpoints mit neuen Feldern
+
+**GET /tournaments/:id/entries**
+
+```json
+{
+  "id": "08-0869",
+  "name": "Jörg Dettmer",
+  "entry_type": "single",
+  "discipline_ids": ["tio:FrVmg2xPBuFUP"]  // ✅ NEU
+}
+```
+
+**GET /tournaments/:id/courts**
+
+```json
+[
+  {
+    "id": "tio:XBZxd1GA3Kog9",
+    "number": 1,
+    "name": "Court 1",
+    "current_match_id": "tio:abc123"  // ✅ Jetzt korrekt
+  }
+]
+```
+
+**GET /tournaments/:id/matches/:matchId**
+
+```json
+{
+  "id": "tio:abc123",
+  "team1_name": "Team A",
+  "team2_name": "Team B",
+  "state": "running",
+  "court_id": "tio:XBZxd1GA3Kog9"  // ✅ Jetzt gesetzt
+}
+```
+
+---
+
+### 7. Häufige Queries
+
+**Alle Courts mit laufenden Matches:**
+
+```sql
+SELECT c.*, m.team1_name, m.team2_name 
+FROM courts c
+JOIN matches m ON c.current_match_id = m.id
+WHERE m.state = 'running'
+ORDER BY c.number;
+```
+
+**Entries einer Discipline:**
+
+```sql
+SELECT * FROM entries
+WHERE discipline_ids @> '["tio:FrVmg2xPBuFUP"]'
+ORDER BY name;
+```
+
+**Matches ohne Court-Zuordnung:**
+
+```sql
+SELECT m.*, g.name as group_name
+FROM matches m
+JOIN groups g ON m.group_id = g.id
+WHERE m.court_id IS NULL
+AND m.state IN ('running', 'played')
+ORDER BY m.start_time DESC;
+```
+
+**Tournament-Statistik:**
+
+```sql
+SELECT 
+    t.name,
+    t.state,
+    COUNT(DISTINCT e.id) as entries,
+    COUNT(DISTINCT c.id) as courts,
+    COUNT(DISTINCT m.id) as matches,
+    SUM(CASE WHEN m.court_id IS NOT NULL THEN 1 ELSE 0 END) as matches_with_court
+FROM tournaments t
+LEFT JOIN entries e ON e.tournament_id = t.id
+LEFT JOIN courts c ON c.tournament_id = t.id
+LEFT JOIN disciplines d ON d.tournament_id = t.id
+LEFT JOIN stages st ON st.discipline_id = d.id
+LEFT JOIN groups g ON g.stage_id = st.id
+LEFT JOIN matches m ON m.group_id = g.id
+GROUP BY t.id, t.name, t.state
+ORDER BY t.last_synced_at DESC;
+```
+
+---
+
+### 8. Troubleshooting
+
+**Problem: Courts werden nicht gespeichert**
+
+```bash
+# Check 1: API-Response prüfen
+cat logs/api_responses/tournament_tio:*.json | jq '.courts'
+
+# Check 2: Sync-Log prüfen
+grep "Courts" logs/sync.log | tail -20
+
+# Check 3: DB prüfen
+psql -d kickertool_db -c "SELECT COUNT(*) FROM courts;"
+```
+
+**Problem: Entries ohne Discipline**
+
+```bash
+# Check 1: Migration prüfen
+psql -d kickertool_db -c "
+  SELECT column_name FROM information_schema.columns 
+  WHERE table_name = 'entries' AND column_name = 'discipline_ids'
+"
+
+# Check 2: Entries zählen
+psql -d kickertool_db -c "
+  SELECT 
+    COUNT(*) as total,
+    SUM(CASE WHEN discipline_ids IS NOT NULL THEN 1 ELSE 0 END) as with_disc
+  FROM entries
+"
+
+# Lösung: Tournament neu syncen
+curl -X POST http://localhost:5000/tournaments/tio:XXX/sync
+```
+
+**Problem: Matches ohne Court**
+
+```bash
+# Normal bei finished Tournaments!
+# Courts werden nur via Webhooks während des Spielens gesetzt
+
+# Check: Webhook-Logs prüfen
+grep "CourtMatchChanged" logs/webhooks.log | tail -10
+```
+
+---
+
+### 9. Testing Checklist
+
+```bash
+# ✅ 1. Migration
+python migration_v2_2.py
+# Erwartung: "Migration erfolgreich"
+
+# ✅ 2. Verification
+python verify_fixes.py
+# Erwartung: "Alle Checks bestanden"
+
+# ✅ 3. Sync testen
+curl -X POST http://localhost:5000/tournaments/tio:XXX/sync
+# Erwartung: HTTP 200, "Sync erfolgreich"
+
+# ✅ 4. Courts prüfen
+curl http://localhost:5000/tournaments/tio:XXX/courts
+# Erwartung: JSON mit Courts
+
+# ✅ 5. Entries prüfen
+curl http://localhost:5000/tournaments/tio:XXX/entries
+# Erwartung: JSON mit discipline_ids
+
+# ✅ 6. Webhook testen
+curl -X POST http://localhost:5000/webhook/test \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": 999,
+    "tournamentId": "tio:XXX",
+    "events": [{
+      "type": "CourtMatchChanged",
+      "courtId": "tio:YYY",
+      "matchId": "tio:ZZZ",
+      "createdAt": "2026-01-04T18:00:00Z"
+    }]
+  }'
+# Erwartung: HTTP 200, Court wurde aktualisiert
+```
+
+---
+
+### 10. Performance-Tipps
+
+**Index für Discipline-Queries:**
+
+```sql
+-- Wird automatisch bei Migration erstellt
+CREATE INDEX IF NOT EXISTS ix_entries_discipline_ids 
+ON entries USING GIN (discipline_ids);
+```
+
+**Optimize Queries:**
+
+```python
+# Schlecht: N+1 Problem
+entries = Entry.query.all()
+for e in entries:
+    disciplines = Discipline.query.filter(...).all()
+
+# Gut: Single Query mit Join
+entries_with_disc = db.session.execute(text("""
+    SELECT e.*, d.name as discipline_name
+    FROM entries e
+    CROSS JOIN LATERAL jsonb_array_elements_text(e.discipline_ids) AS disc_id
+    JOIN disciplines d ON d.id = disc_id::text
+""")).fetchall()
+```
+
+---
+
+### 11. Rollback (Emergency)
+
+**Wenn etwas schiefgeht:**
+
+```bash
+# 1. Datenbank auf Backup zurücksetzen
+psql -d kickertool_db < backup_YYYY-MM-DD.sql
+
+# 2. Alte Code-Version wiederherstellen
+git checkout v2.1
+
+# 3. Server neustarten
+docker-compose restart
+```
+
+**Oder nur Migration rückgängig:**
+
+```bash
+python migration_v2_2.py --rollback
+# Achtung: Löscht discipline_ids Spalte!
+```
+
+---
+
+### 12. Next Steps
+
+1. **Testing:** Verschiedene Tournaments testen
+2. **Monitoring:** Logs überwachen
+3. **UI:** Dashboard für Courts bauen
+4. **Performance:** Caching für häufige Queries
+5. **Docs:** API-Dokumentation updaten
+
+---
+
+## 📞 Support
+
+**Logs:**
+- Sync: `logs/sync.log`
+- Webhooks: `logs/webhooks.log`
+- Errors: `logs/errors.log`
+
+**Commands:**
+```bash
+# Logs live anzeigen
+tail -f logs/sync.log
+
+# Letzte 50 Zeilen
+tail -50 logs/webhooks.log
+
+# Fehler suchen
+grep "ERROR" logs/errors.log
+```
+
+---
+
+**Version:** 2.2  
+**Letzte Aktualisierung:** 2026-01-04  
+**Status:** Production Ready 🚀
