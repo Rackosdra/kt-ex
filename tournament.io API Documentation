@@ -1,0 +1,963 @@
+Tournament.app Public API
+ The document and the API is still work in progress. It only works with Version 3 of Kickertool.
+Welcome to the Tournament.app Public API documentation. This API allows you to access tournament data from our platform, enabling you to integrate Tournament.app functionality into your own applications or services.
+
+Introduction
+The Tournament.app Public API provides programmatic access to tournament information, including tournament details, courts, and matches. This API is designed for end-users who want to retrieve data from tournaments they have created or have access to on the Tournament.app platform.
+
+Supported Apps
+Currently this API is only supported by the Kickertool V3 Alpha: https://alpha.kickertool.de
+
+Authentication
+To use the API, you'll need to generate an API token. Follow these steps to obtain your token:
+
+Log in to your Tournament.app account
+Click on your profile picture in the bottom left corner
+Navigate to "Settings"
+Select the "API" section
+Generate your API token
+Once you have your token, include it in the header of each API request for authentication.
+
+Base URL
+All API requests should be made to:
+
+https://api.tournament.io/v1/public
+cURL
+API
+Authentication Test
+GET
+/hello
+https://api.tournament.io/v1/public/hello
+This endpoint serves as a simple authentication test. When called with a valid API token, it returns basic information about the authenticated user.
+
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/hello" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+{
+  "sport": "table_soccer",
+  "sub": "cbd36e0a-400a-4996-a4c9-5a8808dc31ba"
+}
+Example response - 403:
+{
+  "message": "Forbidden resource",
+  "error": "Forbidden",
+  "statusCode": 403
+}
+Tournaments
+GET
+/tournaments
+https://api.tournament.io/v1/public/tournaments
+This endpoint retrieves a list of tournaments associated with the authenticated user. You can use query parameters to filter and paginate the results.
+
+Valid state values:
+planned: Tournament options are still being edited
+pre-registration: Tournament is in pre-registration phase
+check-in: Tournament is in check-in phase
+ready: Tournament is ready to start
+running: Tournament is currently running
+finished: Tournament has ended
+cancelled: Tournament has been cancelled
+Notes
+If no state is specified, tournaments in all states will be returned.
+The limit and offset parameters can be used together for pagination.
+Tournaments are typically sorted by start date, with the most recent first.
+Parameters
+limit
+25
+The maximum number of tournaments to return. Default is 25.
+offset
+0
+The number of tournaments to skip before starting to return results.
+state
+running
+Filter tournaments by their current state.
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments?limit=25&offset=0&state=running" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+[
+  {
+    "id": "tio:nBwyxswp26Vfk",
+    "name": "MonsterDYP",
+    "disciplines": [
+      {
+        "_id": "tio:Xm6bweBQmhni8",
+        "shortName": "D1",
+        "name": "Discipline 1",
+        "modes": [
+          "monster_dyp"
+        ],
+        "entryType": "monster_dyp"
+      }
+    ],
+    "date": "2024-08-08T13:22:10.101Z",
+    "state": "running",
+    "numPlayers": 20,
+    "numTeams": 0,
+  },
+  ...
+]
+GET
+/tournaments/:id
+https://api.tournament.io/v1/public/tournaments/:id
+Get a single tournament.
+
+Tournament Structure
+The tournament object is structured hierarchically to accommodate various competition formats and complexities. Here's a breakdown of its main components:
+
+Disciplines
+Disciplines represent different categories or events within a tournament. Examples include:
+
+Open Singles
+Open Doubles
+Men's Doubles
+Women's Singles
+…
+EntryType
+The entryType defines what type of participants are playing in a discipline.
+
+EntryType	Description
+single	Represents individual participants. Each entry is a single player competing on their own.
+team_name	Represents named teams. Entries are teams with specific names. No players are assigned.
+dyp	Stands for "Draw Your Partner". In this format, players are paired before the tournament starts. During the tournament, the teams are fixed.
+byp	Stands for "Bring Your Partner". Players enter the tournament with a chosen partner, forming a fixed team throughout the event.
+monster_dyp	Individual players participate and are assigned to new teams every round.
+Stages
+Stages represent distinct phases of a tournament within a discipline. Common stages include:
+
+Preliminary Round
+Elimination Round
+Valid states
+StageState	Description
+planned	The stage is set up but not yet ready to begin. It may still be in the configuration or preparation phase.
+ready	The stage is fully configured and ready to start. All necessary preparations are complete, but matches haven't begun.
+running	The stage is currently active. Matches are being played or are scheduled to be played in this stage.
+finished	All matches in the stage have been completed. The stage is no longer active and its results are final.
+Groups
+Groups are the fundamental units of competition within a stage. Every stage has at least one group, but can have multiple depending on the tournament format:
+
+In a round-robin format (like the soccer World Cup), a stage might have multiple groups where teams play against others in their group.
+In elimination formats, multiple groups can represent different elimination trees
+Groups define the tournament mode, such as Swiss system, round-robin, or single elimination. They contain the matches and standings for that part of the competition. The states are the same as the states in the stage.
+
+Currently following tournament modes are implemented:
+
+double_elimination
+elimination
+last_one_standing
+lord_have_mercy
+monster_dyp
+round_robin
+rounds
+snake_draw
+swiss
+dutch_system
+whist
+Group Options
+Group options define specific settings and rules for how matches are conducted within a group:
+
+Match Configurations
+Match configurations set the rules for how games are played and scored.
+
+Option	Description
+name	The name of the match configuration (e.g., "Encounter 1", "Team 1 vs Team 1", "Single") is chosen by the Tournament Admin and should only be displayed if more than one configuration is set up.
+draw	Boolean indicating whether matches can end in a draw
+numPoints	Number of points needed to win a set
+numSets	Number of won sets needed to win the match
+twoAhead	Boolean indicating whether a player must win by two points
+quickEntry	Boolean enabling simplified score entry mode, in this case scores a either 1 or 0
+Additional Settings
+Some tournament modes have specific options:
+
+Option	Description
+eliminationThirdPlace	Boolean indicating whether a third-place match will be played in elimination formats
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+{
+  "id": "tio:T5MMiW8IVuWMp",
+  "name": "SaDo",
+  "description": "",
+  "startTime": "2024-04-27T14:20:00.772Z",
+  "endTime": "2024-04-27T14:20:00.772Z",
+  "state": "running",
+  "disciplines": [
+    {
+      "id": "tio:I8QZl6uRnsvta",
+      "name": "Discipline 1",
+      "shortName": "D1",
+      "entryType": "byp",
+      "stages": [
+        {
+          "id": "tio:zDbCy8RMvgoBF",
+          "state": "running",
+          "groups": [
+            {
+              "id": "tio:N2qVwj1OZyQXK",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "swiss",
+              "state": "running",
+              "options": {
+                "eliminationThirdPlace": false,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+Entries (Players / Teams)
+In Tournament.app, "Entries" refer to Players or Teams participating in a tournament.
+
+GET
+/tournaments/:id/entries
+https://api.tournament.io/v1/public/tournaments/:id/entries
+This endpoint retrieves all entries for a specific tournament. Whether they are individual players or teams, depends on each disciplines entry type.
+
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/entries" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+[
+  {
+    "id": "05-9012_05-9876",
+    "name": "Caroline Conrad / Andrei Andros"
+  },
+  {
+    "id": "05-2553_05-4357",
+    "name": "Helmut Poppen / Sophia Poppen"
+  },
+  ...
+]
+GET
+/tournaments/:id/discipline/:disciplineId/entries
+https://api.tournament.io/v1/public/tournaments/:id/discipline/:disciplineId/entries
+This endpoint retrieves all entries for a specific discipline in a tournament. Whether they are individual players or teams, depends on each disciplines entry type.
+
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/discipline/:disciplineId/entries" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+[
+  {
+    "id": "05-9012_05-9876",
+    "name": "Caroline Conrad / Andrei Andros"
+  },
+  {
+    "id": "05-2553_05-4357",
+    "name": "Helmut Poppen / Sophia Poppen"
+  },
+  ...
+]
+GET
+/tournaments/:id/group/:groupId/entries
+https://api.tournament.io/v1/public/tournaments/:id/group/:groupId/entries
+This endpoint retrieves all entries for a specific group in the tournament. Whether they are individual players or teams, depends on each disciplines entry type.
+
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/group/:groupId/entries" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+[
+  {
+    "id": "05-9012_05-9876",
+    "name": "Caroline Conrad / Andrei Andros"
+  },
+  {
+    "id": "05-2553_05-4357",
+    "name": "Helmut Poppen / Sophia Poppen"
+  },
+  ...
+]
+Courts / Tables
+In Tournament.app, "courts" refer to the designated playing areas for matches. For table soccer (foosball) tournaments, courts are equivalent to tables. Each court represents a single foosball table where matches are played.
+
+GET
+/tournaments/:id/courts
+https://api.tournament.io/v1/public/tournaments/:id/courts
+This endpoint retrieves a list of courts associated with a specific tournament.
+
+ A court object includes the `currentMatchId` of the currently assigned match, if a match is assigned and announced. Add the query parameter `includeMatchDetails=true` to include the full match.
+Parameters
+includeMatchDetails
+true
+When set to `true` the current match on the court will be included in the response. The match object is described in the Matches section.
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/courts?includeMatchDetails=true" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+[
+  {
+    "id": "tio:XBZxd1GA3Kog9",
+    "number": 1,
+    "name": "1"
+  },
+  {
+    "id": "tio:dLUOkXt5oHEvq",
+    "number": 2,
+    "name": "2",
+    "currentMatchId": "tio:dWT5oSbv2kYQg"
+  },
+  {
+    "id": "tio:5k35E1vfm3IwG",
+    "number": 3,
+    "name": "3"
+  },
+  ...
+]
+Example response - 200:
+// with includeMatchDetails=true
+[
+  {
+    "id": "tio:XBZxd1GA3Kog9",
+    "number": 1,
+    "name": "1"
+  },
+  {
+    "id": "tio:dLUOkXt5oHEvq",
+    "number": 2,
+    "name": "2",
+    "currentMatchId": "tio:dWT5oSbv2kYQg",
+    "currentMatch": {
+      "id": "tio:dWT5oSbv2kYQg",
+      "entries": [
+        {
+          "id": "05-2553_05-4357",
+          "name": "Helmut Poppen / Sophia Poppen"
+        },
+        {
+          "id": "05-9012_05-9876",
+          "name": "Caroline Conrad / Andrei Andros"
+        }
+      ],
+      "state": "running",
+      "encounters": [],
+      "disciplineName": "[D1] Discipline 1",
+      "roundName": "Round 1",
+      "groupName": "Qualification"
+      "startTime": "2024-07-03T14:39:16.575Z"
+    }
+  },
+  {
+    "id": "tio:5k35E1vfm3IwG",
+    "number": 3,
+    "name": "3"
+  },
+  ...
+]
+GET
+/tournaments/:id/courts/:courtId
+https://api.tournament.io/v1/public/tournaments/:id/courts/:courtId
+This endpoint retrieves a single court.
+
+ A court object includes the `currentMatchId` of the currently assigned match, if a match is assigned and announced.
+Parameters
+includeMatchDetails
+true
+When set to `true` the current match on the court will be included in the response. The match object is described in the Matches section.
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/courts/:courtId?includeMatchDetails=true" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+{
+  "id": "tio:dLUOkXt5oHEvq",
+  "number": 2,
+  "name": "2",
+  "currentMatchId": "tio:dWT5oSbv2kYQg"
+}
+Example response - 200:
+// with includeMatchDetails=true
+{
+  "id": "tio:dLUOkXt5oHEvq",
+  "number": 2,
+  "name": "2",
+  "currentMatchId": "tio:dWT5oSbv2kYQg",
+  "currentMatch": {
+    "id": "tio:dWT5oSbv2kYQg",
+    "entries": [
+      {
+        "id": "05-2553_05-4357",
+        "name": "Helmut Poppen / Sophia Poppen"
+      },
+      {
+        "id": "05-9012_05-9876",
+        "name": "Caroline Conrad / Andrei Andros"
+      }
+    ],
+    "state": "running",
+    "encounters": [],
+    "startTime": "2024-07-03T14:39:16.575Z"
+  }
+}
+Matches
+GET
+/tournaments/:id/matches/:matchId
+https://api.tournament.io/v1/public/tournaments/:id/matches/:matchId
+This endpoint allows you to retrieve detailed information about a specific match within a tournament. This endpoint is useful for getting up-to-date data on match status, scores, and participating players or teams.
+
+entries
+The structure of the entries field can vary depending on the type of tournament running.
+
+ All teams or players can be `null`. For example, if a team in an elimination round has not yet been assigned, it will be indicated as `null`.
+Singles Tournament
+For a Singles tournament it would appear as follows:
+
+"entries": [
+  {
+    "id": "05-2553",
+    "name": "Helmut Poppen"
+  },
+  {
+    "id": "05-4357",
+    "name": "Sophia Poppen"
+  }
+],
+Fixed Teams tournament
+For a structiure for a fixed team tournament looks quite similar:
+
+"entries": [
+{
+    "id": "05-2553_05-4357",
+    "name": "Helmut Poppen / Sophia Poppen"
+  },
+  {
+    "id": "05-9012_05-9876",
+    "name": "Caroline Conrad / Andrei Andros"
+  }
+],
+Variable Teams Tournament
+For a MonsterDYP or Last One Standing tournament, the players of a team are wrapped in an seperate array:
+
+"entries": [
+  [
+    {
+      "id": "05-2553",
+      "name": "Helmut Poppen"
+    },
+    {
+      "id": "05-4357",
+      "name": "Sophia Poppen"
+    }
+  ],
+  [
+    {
+      "id": "05-9012",
+      "name": "Caroline Conrad"
+    },
+    {
+      "id": "05-9876",
+      "name": "Andrei Andros"
+    }
+  ],
+],
+ There are tournament modes that support more than 2 players per team.
+ The team may be set to `null`, and there are even cases where a single player in a team is set to `null`. This occurs when the "Lord Have Mercy" system is enabled during an elimination.
+Valid state values:
+open: Match is waiting to be announced
+paused: Match is disabled (on pause)
+skipped: Match is skipped (e.g. Entry left tournament)
+running: Match is running
+played: Match is finished / played
+planned: Match is planned / awaiting announcement
+incomplete: Match is waiting for entries to be assigned
+bye: Match is a bye (e.g. in elimination stage)
+encounters / score
+The encounters array stores the detailed result of the match. It consists of 3 nested arrays:
+
+1) Encounters: For league modes like Single/Double/Single every entry represents an encounter
+   2) Sets: This is an array of winning sets
+      3) Score: The actual result of an match is stored here
+ If a result is set, there will be a `displayScore` property that contains the calculated score.
+Simple Example: just one set
+
+"encounters": [
+  [
+    [7, 5]
+  ]
+],
+"displayScore": [7, 5],
+More complex: Best of 3
+
+"encounters": [
+  [
+    [7, 5],
+    [6, 7],
+    [2, 7]
+  ]
+],
+"displayScore": [1, 3]
+Max. Complexity: 3 Encounters - Best of 3, Best of one, Best of 5
+
+"encounters": [
+  [
+    [7, 5],
+    [6, 7],
+    [2, 7]
+  ],
+    [2, 7]
+  ],
+    [
+    [6, 7],
+    [7, 5],
+    [2, 7],
+    [7, 5],
+    [2, 7],
+  ],
+],
+"displayScore": [0, 3]
+ If "Quick Entry" for results is selected, scores are represented as `1` or `0`.
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/matches/:matchId" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+// Running Match
+{
+  "id": "tio:dWT5oSbv2kYQg",
+  "entries": [
+    {
+      "id": "05-2553_05-4357",
+      "name": "Helmut Poppen / Sophia Poppen"
+    },
+    {
+      "id": "05-9012_05-9876",
+      "name": "Caroline Conrad / Andrei Andros"
+    }
+  ],
+  "state": "running",
+  "encounters": [],
+  "isLiveResult": true,
+  
+  "disciplineId": "tio:JHriFxv2ZBCYD",
+  "disciplineName": "[D1] Discipline 1",
+  "roundId": "tio:S0U825dvJ8v5a",
+  "roundName": "Round 1",
+  "groupId": "tio:bEC14gDhxf5pT",
+  "groupName": "Qualification",
+  
+  "startTime": "2024-07-03T14:39:16.575Z"
+}
+Example response - 200:
+// Finished Match
+{
+  "id": "tio:dWT5oSbv2kYQg",
+  "entries": [
+    {
+      "id": "05-2553_05-4357",
+      "name": "Helmut Poppen / Sophia Poppen"
+    },
+    {
+      "id": "05-9012_05-9876",
+      "name": "Caroline Conrad / Andrei Andros"
+    }
+  ],
+  "state": "played",
+  "encounters": [
+    [
+      [
+        0,
+        1
+      ]
+    ]
+  ],
+  "displayScore": [
+    0,
+    1
+  ],
+  
+  "disciplineId": "tio:JHriFxv2ZBCYD",
+  "disciplineName": "[D1] Discipline 1",
+  "roundId": "tio:S0U825dvJ8v5a",
+  "roundName": "Round 1",
+  "groupId": "tio:bEC14gDhxf5pT",
+  "groupName": "Qualification",
+  
+  "startTime": "2024-07-03T14:39:16.575Z",
+  "endTime": "2024-08-09T18:09:36.210Z"
+}
+PUT
+/tournaments/:id/matches/:matchId/result
+https://api.tournament.io/v1/public/tournaments/:id/matches/:matchId/result
+This endpoint allows you to set the result of a running match within a tournament.
+
+ Only matches in the state `running` can be updated. If the match has a different state, a 412 status is returned.
+Body
+The request body should contain a `result` field with the new match result:
+
+{
+  "result": [[[1, 7]]]
+}
+The result field follows the structure of the encounters array described in the match details:
+
+Outermost array: Encounters (for league modes like Single/Double/Single)
+Middle array: Sets within each encounter
+Innermost array: Actual scores for each set
+On successful update (status code 200), the response will contain the updated match object. This object follows the same structure as described in the Get Match Details endpoint.
+
+Headers
+Content-Type
+application/json
+Authorization
+Your API token
+Body json
+{
+  "result": [
+    [
+      [
+        1,
+        7
+      ]
+    ]
+  ]
+}
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/matches/:matchId/result" \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X PUT \
+  -d '{
+  "result": [[[1, 7]]]
+}' 
+Example response - 200:
+{
+  "id": "tio:dWT5oSbv2kYQg",
+  "entries": [
+    {
+      "id": "05-2553_05-4357",
+      "name": "Helmut Poppen / Sophia Poppen"
+    },
+    {
+      "id": "05-9012_05-9876",
+      "name": "Caroline Conrad / Andrei Andros"
+    }
+  ],
+  "state": "played",
+  "encounters": [
+    [
+      [
+        1,
+        7
+      ]
+    ]
+  ],
+  "displayScore": [
+    1,
+    7
+  ],
+  "startTime": "2024-07-03T14:39:16.575Z",
+  "endTime": "2024-08-09T18:09:36.210Z",
+  
+  "isLiveResult": false,
+  "disciplineId": "tio:JHriFxv2ZBCYD",
+  "disciplineName": "[D1] Discipline 1",
+  "roundId": "tio:S0U825dvJ8v5a",
+  "roundName": "Round 1",
+  "groupId": "tio:bEC14gDhxf5pT",
+  "groupName": "Qualification"
+}
+Example response - 412:
+{
+  "message": "Match is not running",
+  "error": "Precondition Failed",
+  "statusCode": 412
+}
+PUT
+/tournaments/:id/matches/:matchId/live-result
+https://api.tournament.io/v1/public/tournaments/:id/matches/:matchId/live-result
+This endpoint lets you update the live score of a match in a tournament. It works like PUT /result, but it does not end the match. Use the PUT /live-result endpoint to send in-progress scores. When the match is over, send the final score with PUT /result.
+
+ Only matches in the state `running` can be updated. If the match has a different state, a 412 status is returned.
+Body
+See PUT /result
+
+Headers
+Content-Type
+application/json
+Authorization
+Your API token
+Body json
+{
+  "result": [
+    [
+      [
+        0,
+        0
+      ]
+    ]
+  ]
+}
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/matches/:matchId/live-result" \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X PUT \
+  -d '{
+  "result": [[[0, 0]]]
+}' 
+Standings
+GET
+/tournaments/:id/groups/:groupId/standings
+https://api.tournament.io/v1/public/tournaments/:id/groups/:groupId/standings
+This endpoint allows you to retrieve the current standings for a specific group within a tournament.
+
+Response Structure
+The response returns an array of standing entries, each representing a participant's statistics and ranking within the group. It is always sorted to match the position in the standings.
+
+ Each standing entry always includes the `id` and `entry` fields. All other fields (such as points, matches played, goals, etc.) are only included in the response if they are configured to be shown in the standings table for that particular tournament.
+Possible fields
+Property	Type	Description
+matches	number	Total number of matches played
+points	number	Total points earned
+pointsPerMatch	number	Average points earned per match
+correctedPointsPerMatch	number	Adjusted average points per match (used in MonsterDYP)
+hasCorrectedValue	boolean	Indicates if the points per match have been adjusted
+matchesWon	number	Number of matches won
+matchesLost	number	Number of matches lost
+matchesDraw	number	Number of matches drawn
+matchesDiff	number	Difference between matches won and lost
+setsWon	number	Number of sets won
+setsLost	number	Number of sets lost
+setsDiff	number	Difference between sets won and lost
+encounterWon	number	Number of encounters won
+encounterLost	number	Number of encounters lost
+encounterDraw	number	Number of encounters drawn
+encounterDiff	number	Difference between encounters won and lost
+goals	number	Total goals scored
+goalsIn	number	Total goals conceded
+goalsDiff	number	Difference between goals scored and conceded
+bh1	number	First Buchholz score
+bh2	number	Second Buchholz score
+sb	number	Sonneborn-Berger score
+opponents	Record	Record of opponents faced and their corresponding values
+lives	number	Number of lives remaining (used in "Last One Standing" tournaments)
+rank	number	Position in the standings table (-1 if not ranked)
+result	number	Entry's position in the standings table (always order + 1, -1 if not set)
+prelimResult	number	Entry's position before the current stage (-1 if not applicable)
+lastRound	number	The last round the entry participated in (-1 if not set)
+firstRound	number	The first round the entry participated in (-1 if not set)
+finalResult	boolean	Indicates if this is the final result for the entry
+Headers
+Authorization
+Your API token
+Example request:
+Copy to clipboard
+curl "https://api.tournament.io/v1/public/tournaments/:id/groups/:groupId/standings" \
+  -H 'Authorization: <YOUR_API_TOKEN>' \
+  -X GET 
+Example response - 200:
+[
+  {
+    "id": "tio:N2qVwj1OZyQXK_05-2929_05-3555",
+    "entry": {
+      "id": "05-9012_05-9876",
+      "name": "Caroline Conrad / Andrei Andros"
+    },
+    "matches": 2,
+    "bh1": 0.75,
+    "points": 2
+  },
+  {
+    "id": "tio:N2qVwj1OZyQXK_05-2553_05-4357",
+    "entry": {
+      "id": "05-2553_05-4357",
+      "name": "Helmut Poppen / Sophia Poppen"
+    },
+    "matches": 2,
+    "bh1": 1,
+    "points": 0
+  },
+  ...
+  
+]
+Webhooks
+Webhooks offer a powerful way to receive real-time updates from Tournament.app about specific events in your tournaments. Instead of constantly polling our API for changes, webhooks allow our system to push information to your application as events occur.
+
+To use this feature, you must provide a POST endpoint in your application that we can call when specific changes happen in the tournament.
+
+INFO
+Create Webhooks
+No URL, Just Documentation
+To use the API and set up webhooks, you'll need to generate an API token and configure your webhook endpoints. Follow these steps:
+
+Log in to your Tournament.app account
+Click on your profile picture in the bottom left corner
+Navigate to "Settings"
+Select the "API" section
+Click on "Create Webhook"
+Example request:
+Copy to clipboard
+curl "No URL, Just Documentation" \
+  -X INFO 
+INFO
+Webhook Events
+No URL, Just Documentation
+Each webhook call is structured as a WebhookCallDto, containing a unique, incrementing ID, the tournament ID, and an array of events.
+
+Webhook Synchronization
+Tournament.app supports offline functionality, which can affect webhook event delivery:
+
+When devices are offline, changes are stored locally.
+Upon reconnection, all accumulated changes are synced to the server.
+These synced changes are then sent as events to your webhook endpoint.
+Each event includes a createdAt timestamp, reflecting when the change was made on the user's device.
+This approach ensures that no updates are lost, even during periods of disconnection. However, be aware that you may receive multiple events simultaneously when a device comes back online after an extended offline period.
+
+Webhook Call Structure
+Each webhook call will have this structure:
+
+{
+  "id": 1234,
+  "tournamentId": "tio:T5MMiW8IVuWMp",
+  "events": [
+    {
+      "type": "MatchUpdated",
+      "matchId": "tio:uVOK5NQ5ruqqm",
+      "createdAt": "2024-08-28T15:12:30.413Z"
+    },
+    {
+      "type": "StandingsUpdated",
+      "createdAt": "2024-08-28T15:12:30.413Z"
+    },
+    {
+      "type": "CourtMatchChanged",
+      "courtId": "tio:xfelozmkJVomE",
+      "createdAt": "2024-08-28T15:12:30.413Z"
+    }
+  ]
+}
+Event Types
+CourtMatchChanged
+Triggered when a court gets a new match or a match is removed from a court. Example:
+
+{
+  "type": "CourtMatchChanged",
+  "courtId": "tio:XBZxd1GA3Kog9",
+  "matchId": "tio:80qYlVngRdUjx",
+  "createdAt": "2024-08-27T17:06:23.051Z"
+}
+MatchUpdated
+Triggered when a match is updated (e.g., score update, player change). Example:
+
+{
+  "type": "MatchUpdated",
+  "matchId": "tio:80qYlVngRdUjx",
+  "createdAt": "2024-08-27T17:06:23.051Z"
+}
+TournamentUpdated
+Triggered when tournament state or options are changed. Example:
+
+{
+  "type": "TournamentUpdated",
+  "createdAt": "2024-08-27T17:06:23.051Z"
+}
+TournamentAdded
+Triggered when a new tournament is added. Example:
+
+{
+  "type": "TournamentAdded",
+  "createdAt": "2024-08-27T17:06:23.051Z"
+}
+EntryListUpdated
+Triggered when:
+
+An entry is added
+An Entry is removed
+An Entry is edited
+Example:
+
+{
+  "type": "EntryListUpdated",
+  "createdAt": "2024-08-27T17:06:23.051Z"
+}
+StandingsUpdated
+Triggered when the standings of the tournament where updated
+
+Example:
+
+{
+  "type": "StandingsUpdated",
+  "createdAt": "2024-08-27T17:06:23.051Z"
+}
+Example request:
+Copy to clipboard
+curl "No URL, Just Documentation" \
+  -X INFO 
+INFO
+Error Handling
+No URL, Just Documentation
+Tournament.app implements a robust error handling and retry mechanism for webhook deliveries:
+
+Retry Mechanism
+If your webhook endpoint responds with a non-2xx status code, Tournament.app considers it a failed delivery.
+The system will attempt to resend the events up to 5 times.
+Each retry follows an exponential backoff strategy, increasing the time between attempts.
+Webhook Disabling
+After 5 consecutive failed attempts, the webhook will be automatically disabled.
+This prevents unnecessary network traffic and reduces system load.
+Re-enabling a Disabled Webhook
+To re-enable a disabled webhook:
+
+Navigate to the webhook list in your Tournament.app settings.
+Locate the disabled webhook (it will be marked as such).
+Click the play button next to the disabled webhook to re-enable it.
+Debugging
+The webhook list in Tournament.app provides access to log messages for each webhook. These logs are available for debugging purposes can hopepfully assist in identifying and resolving issues with your webhook endpoint.
