@@ -1,0 +1,72 @@
+services:
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-kickertool_db}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5001:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-user} -d ${POSTGRES_DB:-kickertool_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - kickertool-net
+
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-user}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-kickertool_db}
+      - KICKERTOOL_API_KEY=${KICKERTOOL_API_KEY}
+      - FLASK_ENV=${FLASK_ENV:-production}
+      - FLASK_DEBUG=${FLASK_DEBUG:-0}
+    volumes:
+      # Logs auf Host
+      - ./logs:/app/logs
+      
+      # HOT-RELOAD: Code-Verzeichnisse (NEU: routes und services als Ordner)
+      - ./app/__init__.py:/app/app/__init__.py
+      - ./app/models.py:/app/app/models.py
+      - ./app/routes:/app/app/routes
+      - ./app/services:/app/app/services
+      - ./app/utils:/app/app/utils
+      - ./run.py:/app/run.py
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - kickertool-net
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Cloudflare Quick Tunnel
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --url http://api:5000
+    restart: always
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - kickertool-net
+
+volumes:
+  pgdata:
+
+networks:
+  kickertool-net:
+    driver: bridge

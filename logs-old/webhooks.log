@@ -1,0 +1,23 @@
+2025-12-28 20:00:37 [INFO] webhooks: 📨 Webhook #74 | Tournament: tio:nikPA8bLPLfZT | Events: 2 (1x TournamentAdded, 1x TournamentUpdated)
+2025-12-28 20:00:37 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:nikPA8bLPLfZT
+2025-12-28 20:00:38 [INFO] webhooks: 📨 Webhook #75 | Tournament: tio:nikPA8bLPLfZT | Events: 1 (1x TournamentUpdated)
+2025-12-28 20:00:38 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:nikPA8bLPLfZT
+2025-12-28 20:00:43 [INFO] webhooks: 📨 Webhook #76 | Tournament: tio:nikPA8bLPLfZT | Events: 1 (1x EntryListUpdated)
+2025-12-28 20:00:43 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:nikPA8bLPLfZT
+2026-01-04 17:00:57 [INFO] webhooks: ⏭️ Webhook 0 bereits verarbeitet (Skip)
+2026-01-04 17:00:57 [INFO] webhooks: ⏭️ Webhook 1 bereits verarbeitet (Skip)
+2026-01-04 17:01:35 [INFO] webhooks: ⏭️ Webhook 2 bereits verarbeitet (Skip)
+2026-01-04 17:01:38 [INFO] webhooks: ⏭️ Webhook 3 bereits verarbeitet (Skip)
+2026-01-04 17:01:41 [INFO] webhooks: ⏭️ Webhook 4 bereits verarbeitet (Skip)
+2026-01-04 17:03:49 [INFO] webhooks: ⏭️ Webhook 5 bereits verarbeitet (Skip)
+2026-01-04 17:03:53 [INFO] webhooks: ⏭️ Webhook 6 bereits verarbeitet (Skip)
+2026-01-04 17:10:41 [INFO] webhooks: 📨 Webhook #7 | Tournament: tio:nTLBscas0M2Rx | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 17:10:41 [INFO] webhooks: ⚡ Partial-Sync für tio:nTLBscas0M2Rx
+2026-01-04 17:14:29 [INFO] webhooks: 📨 Webhook #8 | Tournament: tio:nTLBscas0M2Rx | Events: 2 (2x CourtMatchChanged)
+2026-01-04 17:14:29 [INFO] webhooks: ⚡ Partial-Sync für tio:nTLBscas0M2Rx
+2026-01-04 17:18:47 [INFO] webhooks: 📨 Webhook #9 | Tournament: tio:nTLBscas0M2Rx | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 17:18:47 [INFO] webhooks: ⚡ Partial-Sync für tio:nTLBscas0M2Rx
+2026-01-04 17:18:50 [INFO] webhooks: 📨 Webhook #10 | Tournament: tio:nTLBscas0M2Rx | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 17:18:50 [INFO] webhooks: ⚡ Partial-Sync für tio:nTLBscas0M2Rx
+2026-01-04 17:18:58 [INFO] webhooks: 📨 Webhook #11 | Tournament: tio:nTLBscas0M2Rx | Events: 4 (4x CourtMatchChanged)
+2026-01-04 17:18:58 [INFO] webhooks: ⚡ Partial-Sync für tio:nTLBscas0M2Rx

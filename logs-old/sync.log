@@ -1,0 +1,719 @@
+2025-12-28 20:00:37 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:nikPA8bLPLfZT mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2025-12-28 20:00:37 [INFO] sync: 📡 API Response Status: 200
+2025-12-28 20:00:37 [INFO] sync: 📊 API-Response enthält:
+2025-12-28 20:00:38 [INFO] sync:   - disciplines: 1
+2025-12-28 20:00:38 [INFO] sync:   - courts: 0
+2025-12-28 20:00:38 [INFO] sync:   - matches (in groups): 0
+2025-12-28 20:00:38 [INFO] sync:   - standings (in groups): 0
+2025-12-28 20:00:38 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:nikPA8bLPLfZT/entries
+2025-12-28 20:00:38 [INFO] sync: 📡 Entries Response Status: 200
+2025-12-28 20:00:38 [INFO] sync: 📊 Entries API returned: 0 entries
+2025-12-28 20:00:38 [INFO] sync: ✅ Sync für tio:nikPA8bLPLfZT erfolgreich abgeschlossen.
+2025-12-28 20:00:38 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:nikPA8bLPLfZT mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2025-12-28 20:00:38 [INFO] sync: 📡 API Response Status: 200
+2025-12-28 20:00:38 [INFO] sync: 📊 API-Response enthält:
+2025-12-28 20:00:38 [INFO] sync:   - disciplines: 1
+2025-12-28 20:00:38 [INFO] sync:   - courts: 0
+2025-12-28 20:00:38 [INFO] sync:   - matches (in groups): 0
+2025-12-28 20:00:38 [INFO] sync:   - standings (in groups): 0
+2025-12-28 20:00:38 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:nikPA8bLPLfZT/entries
+2025-12-28 20:00:39 [INFO] sync: 📡 Entries Response Status: 200
+2025-12-28 20:00:39 [INFO] sync: 📊 Entries API returned: 0 entries
+2025-12-28 20:00:39 [INFO] sync: ✅ Sync für tio:nikPA8bLPLfZT erfolgreich abgeschlossen.
+2025-12-28 20:00:43 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:nikPA8bLPLfZT mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2025-12-28 20:00:43 [INFO] sync: 📡 API Response Status: 200
+2025-12-28 20:00:43 [INFO] sync: 📊 API-Response enthält:
+2025-12-28 20:00:43 [INFO] sync:   - disciplines: 1
+2025-12-28 20:00:43 [INFO] sync:   - courts: 0
+2025-12-28 20:00:43 [INFO] sync:   - matches (in groups): 0
+2025-12-28 20:00:43 [INFO] sync:   - standings (in groups): 0
+2025-12-28 20:00:43 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:nikPA8bLPLfZT/entries
+2025-12-28 20:00:43 [INFO] sync: 📡 Entries Response Status: 200
+2025-12-28 20:00:43 [INFO] sync: 📊 Entries API returned: 16 entries
+2025-12-28 20:00:43 [INFO] sync: ✅ Sync für tio:nikPA8bLPLfZT erfolgreich abgeschlossen.
+2026-01-04 16:37:58 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:lhJDbhiaRx5UW mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:37:59 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:37:59 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:37:59 [INFO] sync:   - disciplines: 1
+2026-01-04 16:37:59 [INFO] sync:   - courts: 0
+2026-01-04 16:37:59 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:37:59 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:37:59 [INFO] sync: 
+================================================================================
+2026-01-04 16:37:59 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:lhJDbhiaRx5UW
+2026-01-04 16:37:59 [INFO] sync: ================================================================================
+2026-01-04 16:37:59 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:38:01 [INFO] sync: ✅ Tournament: test (running)
+2026-01-04 16:38:01 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:38:01 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:38:01 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:38:01 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:lhJDbhiaRx5UW/entries
+2026-01-04 16:38:01 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:38:01 [INFO] sync: 📊 Entries API returned: 12 entries
+2026-01-04 16:38:01 [INFO] sync: 📥 12 Entries von API erhalten
+2026-01-04 16:38:01 [INFO] sync: ✅ Entries: 12 gespeichert
+2026-01-04 16:38:02 [INFO] sync: 🔍 Verification: 12 Entries in DB
+2026-01-04 16:38:02 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:38:02 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 16:38:02 [INFO] sync: 
+✅ Disciplines: 1
+2026-01-04 16:38:02 [INFO] sync: ✅ Stages: 2
+2026-01-04 16:38:02 [INFO] sync: ✅ Groups: 2
+2026-01-04 16:38:02 [INFO] sync: ✅ Standings: 0
+2026-01-04 16:38:02 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:38:02 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:38:02 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:38:02 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:38:03 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:38:03 [INFO] sync:   - Entries: 12
+2026-01-04 16:38:03 [INFO] sync:   - Courts: 0
+2026-01-04 16:38:03 [INFO] sync:   - Standings: 0
+2026-01-04 16:38:03 [INFO] sync:   - Matches: 0
+2026-01-04 16:38:03 [INFO] sync: 
+================================================================================
+2026-01-04 16:38:03 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:lhJDbhiaRx5UW
+2026-01-04 16:38:03 [INFO] sync: ================================================================================
+
+2026-01-04 16:38:03 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:lhJDbhiaRx5UW
+2026-01-04 16:39:51 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:lhJDbhiaRx5UW mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:39:51 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:39:51 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:39:51 [INFO] sync:   - disciplines: 1
+2026-01-04 16:39:51 [INFO] sync:   - courts: 0
+2026-01-04 16:39:51 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:39:51 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:39:51 [INFO] sync: 
+================================================================================
+2026-01-04 16:39:51 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:lhJDbhiaRx5UW
+2026-01-04 16:39:51 [INFO] sync: ================================================================================
+2026-01-04 16:39:51 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:39:51 [INFO] sync: ✅ Tournament: test (running)
+2026-01-04 16:39:51 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:39:51 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:39:51 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:39:51 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:lhJDbhiaRx5UW/entries
+2026-01-04 16:39:51 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:39:51 [INFO] sync: 📊 Entries API returned: 12 entries
+2026-01-04 16:39:51 [INFO] sync: 📥 12 Entries von API erhalten
+2026-01-04 16:39:51 [INFO] sync: ✅ Entries: 12 gespeichert
+2026-01-04 16:39:51 [INFO] sync: 🔍 Verification: 12 Entries in DB
+2026-01-04 16:39:51 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:39:51 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 16:39:51 [INFO] sync: 
+✅ Disciplines: 1
+2026-01-04 16:39:51 [INFO] sync: ✅ Stages: 2
+2026-01-04 16:39:51 [INFO] sync: ✅ Groups: 2
+2026-01-04 16:39:51 [INFO] sync: ✅ Standings: 0
+2026-01-04 16:39:51 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:39:51 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:39:51 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:39:51 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:39:51 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:39:51 [INFO] sync:   - Entries: 12
+2026-01-04 16:39:51 [INFO] sync:   - Courts: 0
+2026-01-04 16:39:51 [INFO] sync:   - Standings: 0
+2026-01-04 16:39:51 [INFO] sync:   - Matches: 0
+2026-01-04 16:39:51 [INFO] sync: 
+================================================================================
+2026-01-04 16:39:51 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:lhJDbhiaRx5UW
+2026-01-04 16:39:51 [INFO] sync: ================================================================================
+
+2026-01-04 16:39:51 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:lhJDbhiaRx5UW
+2026-01-04 16:42:37 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:42:37 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:42:37 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:42:37 [INFO] sync:   - disciplines: 3
+2026-01-04 16:42:37 [INFO] sync:   - courts: 0
+2026-01-04 16:42:37 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:42:37 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:42:37 [INFO] sync: 
+================================================================================
+2026-01-04 16:42:37 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-04 16:42:37 [INFO] sync: ================================================================================
+2026-01-04 16:42:37 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:42:37 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-04 16:42:37 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:42:37 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:42:37 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:42:37 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/entries
+2026-01-04 16:42:37 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:42:37 [INFO] sync: 📊 Entries API returned: 30 entries
+2026-01-04 16:42:37 [INFO] sync: 📥 30 Entries von API erhalten
+2026-01-04 16:42:37 [INFO] sync: ✅ Entries: 30 gespeichert
+2026-01-04 16:42:37 [INFO] sync: 🔍 Verification: 30 Entries in DB
+2026-01-04 16:42:37 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:42:37 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-04 16:42:37 [INFO] sync: 
+✅ Disciplines: 3
+2026-01-04 16:42:37 [INFO] sync: ✅ Stages: 5
+2026-01-04 16:42:37 [INFO] sync: ✅ Groups: 5
+2026-01-04 16:42:37 [INFO] sync: ✅ Standings: 0
+2026-01-04 16:42:37 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:42:37 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:42:37 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:42:37 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:42:37 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:42:37 [INFO] sync:   - Entries: 30
+2026-01-04 16:42:37 [INFO] sync:   - Courts: 0
+2026-01-04 16:42:37 [INFO] sync:   - Standings: 0
+2026-01-04 16:42:37 [INFO] sync:   - Matches: 0
+2026-01-04 16:42:37 [INFO] sync: 
+================================================================================
+2026-01-04 16:42:37 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:AXb7FzJekjxGZ
+2026-01-04 16:42:37 [INFO] sync: ================================================================================
+
+2026-01-04 16:42:37 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:AXb7FzJekjxGZ
+2026-01-04 16:44:25 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:44:25 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:44:25 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:44:25 [INFO] sync:   - disciplines: 3
+2026-01-04 16:44:25 [INFO] sync:   - courts: 0
+2026-01-04 16:44:25 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:44:25 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:44:25 [INFO] sync: 
+================================================================================
+2026-01-04 16:44:25 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-04 16:44:25 [INFO] sync: ================================================================================
+2026-01-04 16:44:25 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:44:25 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-04 16:44:25 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:44:25 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:44:25 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:44:25 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/entries
+2026-01-04 16:44:26 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:44:26 [INFO] sync: 📊 Entries API returned: 30 entries
+2026-01-04 16:44:26 [INFO] sync: 📥 30 Entries von API erhalten
+2026-01-04 16:44:26 [INFO] sync: ✅ Entries: 30 gespeichert
+2026-01-04 16:44:26 [INFO] sync: 🔍 Verification: 30 Entries in DB
+2026-01-04 16:44:26 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:44:26 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-04 16:44:26 [INFO] sync: 
+✅ Disciplines: 3
+2026-01-04 16:44:26 [INFO] sync: ✅ Stages: 5
+2026-01-04 16:44:26 [INFO] sync: ✅ Groups: 5
+2026-01-04 16:44:26 [INFO] sync: ✅ Standings: 0
+2026-01-04 16:44:26 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:44:26 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:44:26 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:44:26 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:44:26 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:44:26 [INFO] sync:   - Entries: 30
+2026-01-04 16:44:26 [INFO] sync:   - Courts: 0
+2026-01-04 16:44:26 [INFO] sync:   - Standings: 0
+2026-01-04 16:44:26 [INFO] sync:   - Matches: 0
+2026-01-04 16:44:26 [INFO] sync: 
+================================================================================
+2026-01-04 16:44:26 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:AXb7FzJekjxGZ
+2026-01-04 16:44:26 [INFO] sync: ================================================================================
+
+2026-01-04 16:44:26 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:AXb7FzJekjxGZ
+2026-01-04 16:45:24 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:45:24 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:45:24 [INFO] sync: 
+🔍 RAW API RESPONSE (first 2000 chars):
+{
+  "id": "tio:AXb7FzJekjxGZ",
+  "name": "testmulti",
+  "description": "",
+  "startTime": "2025-12-28T23:00:00.000Z",
+  "endTime": "2025-12-27T20:43:35.951Z",
+  "state": "finished",
+  "disciplines": [
+    {
+      "id": "tio:FrVmg2xPBuFUP",
+      "name": "Discipline 1",
+      "shortName": "D1",
+      "entryType": "single",
+      "stages": [
+        {
+          "id": "tio:ip6fetBsEGp4g",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:y0Ot2RKY6c6MT",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "swiss",
+              "state": "finished",
+              "options": {
+                "numRoundsPlanned": 5,
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "tio:Mq6envgWAx5RY",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:szlZmw7WvwP9G",
+              "name": "Profi",
+              "tournamentMode": "elimination",
+              "state": "finished",
+              "options": {
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": true,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tio:2mBanlYrVuN1x",
+      "name": "doppel",
+      "shortName": "D2",
+      "entryType": "byp",
+      "stages": [
+        {
+          "id":
+
+2026-01-04 16:45:24 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:45:24 [INFO] sync:   - disciplines: 3
+2026-01-04 16:45:24 [INFO] sync:   - courts: 0
+2026-01-04 16:45:24 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:45:24 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:48:09 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:48:09 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:48:09 [INFO] sync: 
+🔍 RAW API RESPONSE (first 2000 chars):
+{
+  "id": "tio:AXb7FzJekjxGZ",
+  "name": "testmulti",
+  "description": "",
+  "startTime": "2025-12-28T23:00:00.000Z",
+  "endTime": "2025-12-27T20:43:35.951Z",
+  "state": "finished",
+  "disciplines": [
+    {
+      "id": "tio:FrVmg2xPBuFUP",
+      "name": "Discipline 1",
+      "shortName": "D1",
+      "entryType": "single",
+      "stages": [
+        {
+          "id": "tio:ip6fetBsEGp4g",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:y0Ot2RKY6c6MT",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "swiss",
+              "state": "finished",
+              "options": {
+                "numRoundsPlanned": 5,
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "tio:Mq6envgWAx5RY",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:szlZmw7WvwP9G",
+              "name": "Profi",
+              "tournamentMode": "elimination",
+              "state": "finished",
+              "options": {
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": true,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tio:2mBanlYrVuN1x",
+      "name": "doppel",
+      "shortName": "D2",
+      "entryType": "byp",
+      "stages": [
+        {
+          "id":
+
+2026-01-04 16:48:09 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:48:09 [INFO] sync:   - disciplines: 3
+2026-01-04 16:48:09 [INFO] sync:   - courts: 0
+2026-01-04 16:48:09 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:48:09 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:48:09 [INFO] sync: 
+================================================================================
+2026-01-04 16:48:09 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-04 16:48:09 [INFO] sync: ================================================================================
+2026-01-04 16:48:09 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:48:09 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-04 16:48:09 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:48:09 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:48:09 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:48:09 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/entries
+2026-01-04 16:48:10 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:48:10 [INFO] sync: 📊 Entries API returned: 30 entries
+2026-01-04 16:48:10 [INFO] sync: 📥 30 Entries von API erhalten
+2026-01-04 16:48:10 [INFO] sync: ✅ Entries: 30 gespeichert
+2026-01-04 16:48:10 [INFO] sync: 🔍 Verification: 30 Entries in DB
+2026-01-04 16:48:10 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:48:10 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-04 16:48:10 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:48:10 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:48:10 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:48:10 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:y0Ot2RKY6c6MT/matches
+2026-01-04 16:48:10 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:48:10 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:48:10 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 16:48:10 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:48:10 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 16:48:10 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:szlZmw7WvwP9G/matches
+2026-01-04 16:48:11 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:48:11 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:48:11 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:48:11 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:48:11 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:48:11 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:rWK5rVx97zZP2/matches
+2026-01-04 16:48:11 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:48:11 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:48:11 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 16:48:11 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:48:11 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 16:48:11 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:p4JRl2PEofm2Q/matches
+2026-01-04 16:48:12 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:48:12 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:48:12 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:48:12 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:48:12 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:48:12 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:fmLaHcCdxqUNi/matches
+2026-01-04 16:48:12 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:48:12 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:48:12 [INFO] sync: 
+✅ Disciplines: 3
+2026-01-04 16:48:12 [INFO] sync: ✅ Stages: 5
+2026-01-04 16:48:12 [INFO] sync: ✅ Groups: 5
+2026-01-04 16:48:12 [INFO] sync: ✅ Standings: 50
+2026-01-04 16:48:12 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:48:12 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:48:12 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:48:12 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:48:12 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:48:12 [INFO] sync:   - Entries: 30
+2026-01-04 16:48:12 [INFO] sync:   - Courts: 0
+2026-01-04 16:48:12 [INFO] sync:   - Standings: 50
+2026-01-04 16:48:12 [INFO] sync:   - Matches: 0
+2026-01-04 16:48:12 [INFO] sync: 
+================================================================================
+2026-01-04 16:48:12 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:AXb7FzJekjxGZ
+2026-01-04 16:48:12 [INFO] sync: ================================================================================
+
+2026-01-04 16:48:12 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:AXb7FzJekjxGZ
+2026-01-04 16:52:02 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:52:03 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:52:03 [INFO] sync: 📄 Complete API response saved to logs/api_responses/tournament_tio:AXb7FzJekjxGZ.json
+2026-01-04 16:52:03 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:52:03 [INFO] sync:   - disciplines: 3
+2026-01-04 16:52:03 [INFO] sync:   - courts: 0
+2026-01-04 16:52:03 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:52:03 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:52:03 [INFO] sync: 
+================================================================================
+2026-01-04 16:52:03 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-04 16:52:03 [INFO] sync: ================================================================================
+2026-01-04 16:52:03 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:52:03 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-04 16:52:03 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:52:03 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:52:03 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:52:03 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/entries
+2026-01-04 16:52:03 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:52:03 [INFO] sync: 📊 Entries API returned: 30 entries
+2026-01-04 16:52:03 [INFO] sync: 📥 30 Entries von API erhalten
+2026-01-04 16:52:03 [INFO] sync: ✅ Entries: 30 gespeichert
+2026-01-04 16:52:03 [INFO] sync: 🔍 Verification: 30 Entries in DB
+2026-01-04 16:52:03 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:52:03 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-04 16:52:03 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:52:03 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:52:03 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:52:03 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:y0Ot2RKY6c6MT/matches
+2026-01-04 16:52:04 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:52:04 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:52:04 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 16:52:04 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:52:04 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 16:52:04 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:szlZmw7WvwP9G/matches
+2026-01-04 16:52:04 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:52:04 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:52:04 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:52:05 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:52:05 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:52:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:rWK5rVx97zZP2/matches
+2026-01-04 16:52:05 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:52:05 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:52:05 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 16:52:05 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:52:05 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 16:52:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:p4JRl2PEofm2Q/matches
+2026-01-04 16:52:05 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:52:05 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:52:05 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:52:05 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:52:05 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:52:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:fmLaHcCdxqUNi/matches
+2026-01-04 16:52:05 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:52:05 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:52:05 [INFO] sync: 
+✅ Disciplines: 3
+2026-01-04 16:52:05 [INFO] sync: ✅ Stages: 5
+2026-01-04 16:52:05 [INFO] sync: ✅ Groups: 5
+2026-01-04 16:52:05 [INFO] sync: ✅ Standings: 50
+2026-01-04 16:52:05 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:52:05 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:52:05 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:52:05 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:52:06 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:52:06 [INFO] sync:   - Entries: 30
+2026-01-04 16:52:06 [INFO] sync:   - Courts: 0
+2026-01-04 16:52:06 [INFO] sync:   - Standings: 50
+2026-01-04 16:52:06 [INFO] sync:   - Matches: 0
+2026-01-04 16:52:06 [INFO] sync: 
+================================================================================
+2026-01-04 16:52:06 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:AXb7FzJekjxGZ
+2026-01-04 16:52:06 [INFO] sync: ================================================================================
+
+2026-01-04 16:52:06 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:AXb7FzJekjxGZ
+2026-01-04 16:54:03 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 16:54:04 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 16:54:04 [INFO] sync: 📄 Complete API response saved to logs/api_responses/tournament_tio:AXb7FzJekjxGZ.json
+2026-01-04 16:54:04 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 16:54:04 [INFO] sync:   - disciplines: 3
+2026-01-04 16:54:04 [INFO] sync:   - courts: 0
+2026-01-04 16:54:04 [INFO] sync:   - matches (in groups): 0
+2026-01-04 16:54:04 [INFO] sync:   - standings (in groups): 0
+2026-01-04 16:54:04 [INFO] sync: 
+================================================================================
+2026-01-04 16:54:04 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-04 16:54:04 [INFO] sync: ================================================================================
+2026-01-04 16:54:04 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 16:54:04 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-04 16:54:04 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 16:54:04 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 16:54:04 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 16:54:04 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/entries
+2026-01-04 16:54:04 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 16:54:04 [INFO] sync: 📊 Entries API returned: 30 entries
+2026-01-04 16:54:04 [INFO] sync: 📥 30 Entries von API erhalten
+2026-01-04 16:54:04 [INFO] sync: ✅ Entries: 30 gespeichert
+2026-01-04 16:54:04 [INFO] sync: 🔍 Verification: 30 Entries in DB
+2026-01-04 16:54:04 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 16:54:04 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-04 16:54:04 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:54:04 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:54:04 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:54:04 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:y0Ot2RKY6c6MT/matches
+2026-01-04 16:54:04 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:54:04 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:54:04 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 16:54:04 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:54:05 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 16:54:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:szlZmw7WvwP9G/matches
+2026-01-04 16:54:05 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:54:05 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:54:05 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:54:05 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:54:05 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:54:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:rWK5rVx97zZP2/matches
+2026-01-04 16:54:05 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:54:05 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:54:05 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 16:54:05 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:54:05 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 16:54:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:p4JRl2PEofm2Q/matches
+2026-01-04 16:54:05 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:54:05 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:54:05 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:54:05 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 16:54:06 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 16:54:06 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:fmLaHcCdxqUNi/matches
+2026-01-04 16:54:06 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 16:54:06 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 16:54:06 [INFO] sync: 
+✅ Disciplines: 3
+2026-01-04 16:54:06 [INFO] sync: ✅ Stages: 5
+2026-01-04 16:54:06 [INFO] sync: ✅ Groups: 5
+2026-01-04 16:54:06 [INFO] sync: ✅ Standings: 50
+2026-01-04 16:54:06 [INFO] sync: ✅ Matches: 0
+2026-01-04 16:54:06 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 16:54:06 [INFO] sync: ✅ Transaction committed
+2026-01-04 16:54:06 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 16:54:06 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 16:54:06 [INFO] sync:   - Entries: 30
+2026-01-04 16:54:06 [INFO] sync:   - Courts: 0
+2026-01-04 16:54:06 [INFO] sync:   - Standings: 50
+2026-01-04 16:54:06 [INFO] sync:   - Matches: 0
+2026-01-04 16:54:06 [INFO] sync: 
+================================================================================
+2026-01-04 16:54:06 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:AXb7FzJekjxGZ
+2026-01-04 16:54:06 [INFO] sync: ================================================================================
+
+2026-01-04 16:54:06 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:AXb7FzJekjxGZ
+2026-01-04 17:13:41 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-04 17:13:41 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 17:13:41 [INFO] sync: 📄 Complete API response saved to logs/api_responses/tournament_tio:AXb7FzJekjxGZ.json
+2026-01-04 17:13:41 [INFO] sync: 📊 API-Response enthält:
+2026-01-04 17:13:41 [INFO] sync:   - disciplines: 3
+2026-01-04 17:13:41 [INFO] sync:   - courts: 0
+2026-01-04 17:13:41 [INFO] sync:   - matches (in groups): 0
+2026-01-04 17:13:41 [INFO] sync:   - standings (in groups): 0
+2026-01-04 17:13:41 [INFO] sync: 
+================================================================================
+2026-01-04 17:13:41 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-04 17:13:41 [INFO] sync: ================================================================================
+2026-01-04 17:13:41 [INFO] sync: 
+📍 STEP 1: Tournament-Daten
+2026-01-04 17:13:42 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-04 17:13:42 [INFO] sync: 
+📍 STEP 2: Courts
+2026-01-04 17:13:42 [WARNING] sync: ⚠️  Keine Courts in API-Response
+2026-01-04 17:13:42 [INFO] sync: 
+📍 STEP 3: Entries (separater API-Call)
+2026-01-04 17:13:42 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/entries
+2026-01-04 17:13:42 [INFO] sync: 📡 Entries Response Status: 200
+2026-01-04 17:13:42 [INFO] sync: 📊 Entries API returned: 30 entries
+2026-01-04 17:13:42 [INFO] sync: 📥 30 Entries von API erhalten
+2026-01-04 17:13:42 [INFO] sync: ✅ Entries: 30 gespeichert
+2026-01-04 17:13:42 [INFO] sync: 🔍 Verification: 30 Entries in DB
+2026-01-04 17:13:42 [INFO] sync: 
+📍 STEP 4: Disciplines, Stages, Groups, Standings, Matches
+2026-01-04 17:13:42 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-04 17:13:42 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 17:13:42 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 17:13:42 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 17:13:42 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:y0Ot2RKY6c6MT/matches
+2026-01-04 17:13:42 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 17:13:42 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 17:13:42 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 17:13:43 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 17:13:43 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 17:13:43 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:szlZmw7WvwP9G/matches
+2026-01-04 17:13:43 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 17:13:43 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 17:13:43 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 17:13:43 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 17:13:43 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 17:13:43 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:rWK5rVx97zZP2/matches
+2026-01-04 17:13:43 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 17:13:43 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 17:13:43 [INFO] sync:   📊 Lade Standings für Gruppe 'Profi'...
+2026-01-04 17:13:43 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 17:13:43 [INFO] sync:   🎮 Lade Matches für Gruppe 'Profi'...
+2026-01-04 17:13:43 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:p4JRl2PEofm2Q/matches
+2026-01-04 17:13:44 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 17:13:44 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 17:13:44 [INFO] sync:   📊 Lade Standings für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 17:13:44 [INFO] sync:   ✅ 10 Standings geladen
+2026-01-04 17:13:44 [INFO] sync:   🎮 Lade Matches für Gruppe 'COMMON-QUALIFICATION'...
+2026-01-04 17:13:44 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/groups/tio:fmLaHcCdxqUNi/matches
+2026-01-04 17:13:44 [INFO] sync: 📡 Group Matches Response Status: 404
+2026-01-04 17:13:44 [WARNING] sync:   ⚠️  Konnte Matches nicht laden: API-Fehler: HTTP 404
+2026-01-04 17:13:44 [INFO] sync: 
+✅ Disciplines: 3
+2026-01-04 17:13:44 [INFO] sync: ✅ Stages: 5
+2026-01-04 17:13:44 [INFO] sync: ✅ Groups: 5
+2026-01-04 17:13:44 [INFO] sync: ✅ Standings: 50
+2026-01-04 17:13:44 [INFO] sync: ✅ Matches: 0
+2026-01-04 17:13:44 [INFO] sync: 
+📍 FINAL: Commit to Database
+2026-01-04 17:13:44 [INFO] sync: ✅ Transaction committed
+2026-01-04 17:13:44 [INFO] sync: 
+📍 VERIFICATION: Prüfe gespeicherte Daten
+2026-01-04 17:13:44 [INFO] sync: 🔍 In DB gespeichert:
+2026-01-04 17:13:44 [INFO] sync:   - Entries: 30
+2026-01-04 17:13:44 [INFO] sync:   - Courts: 0
+2026-01-04 17:13:44 [INFO] sync:   - Standings: 50
+2026-01-04 17:13:44 [INFO] sync:   - Matches: 0
+2026-01-04 17:13:44 [INFO] sync: 
+================================================================================
+2026-01-04 17:13:44 [INFO] sync: ✅ SYNC ERFOLGREICH ABGESCHLOSSEN FÜR tio:AXb7FzJekjxGZ
+2026-01-04 17:13:44 [INFO] sync: ================================================================================
+
+2026-01-04 17:13:44 [INFO] sync: 🔄 Manueller Sync ausgeführt für Tournament tio:AXb7FzJekjxGZ

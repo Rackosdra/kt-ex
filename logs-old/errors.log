@@ -1,0 +1,30 @@
+2026-01-04 17:10:42 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(7) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 7, 'tournament_id': 'tio:nTLBscas0M2Rx', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 17, 10, 42, 274237), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 17:14:30 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(8) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 8, 'tournament_id': 'tio:nTLBscas0M2Rx', 'event_types': '["CourtMatchChanged", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 17, 14, 30, 273551), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 17:18:47 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(9) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 9, 'tournament_id': 'tio:nTLBscas0M2Rx', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 17, 18, 47, 881256), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 17:18:50 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(10) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 10, 'tournament_id': 'tio:nTLBscas0M2Rx', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 17, 18, 50, 223240), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 17:18:59 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(11) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 11, 'tournament_id': 'tio:nTLBscas0M2Rx', 'event_types': '["CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 17, 18, 59, 260700), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

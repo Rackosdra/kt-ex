@@ -1,0 +1,161 @@
+{
+  "id": "tio:AXb7FzJekjxGZ",
+  "name": "testmulti",
+  "description": "",
+  "startTime": "2025-12-28T23:00:00.000Z",
+  "endTime": "2025-12-27T20:43:35.951Z",
+  "state": "finished",
+  "disciplines": [
+    {
+      "id": "tio:FrVmg2xPBuFUP",
+      "name": "Discipline 1",
+      "shortName": "D1",
+      "entryType": "single",
+      "stages": [
+        {
+          "id": "tio:ip6fetBsEGp4g",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:y0Ot2RKY6c6MT",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "swiss",
+              "state": "finished",
+              "options": {
+                "numRoundsPlanned": 5,
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "tio:Mq6envgWAx5RY",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:szlZmw7WvwP9G",
+              "name": "Profi",
+              "tournamentMode": "elimination",
+              "state": "finished",
+              "options": {
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": true,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tio:2mBanlYrVuN1x",
+      "name": "doppel",
+      "shortName": "D2",
+      "entryType": "byp",
+      "stages": [
+        {
+          "id": "tio:JHD01gIIy06p6",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:rWK5rVx97zZP2",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "swiss",
+              "state": "finished",
+              "options": {
+                "numRoundsPlanned": 5,
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "tio:Ws6AkE4x97jgn",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:p4JRl2PEofm2Q",
+              "name": "Profi",
+              "tournamentMode": "elimination",
+              "state": "finished",
+              "options": {
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": true,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tio:8gnZdT4i9PYT5",
+      "name": "mdyp",
+      "shortName": "D3",
+      "entryType": "monster_dyp",
+      "stages": [
+        {
+          "id": "tio:mF5nD1826bfYO",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:fmLaHcCdxqUNi",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "monster_dyp",
+              "state": "finished",
+              "options": {
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
