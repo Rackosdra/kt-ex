@@ -382,3 +382,44 @@ WHERE entries.id = %(pk_1)s]
 2026-01-04 20:52:48 [WARNING] sync: ⚠️ Match tio:WNjz3KroHYgp3 übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
 2026-01-04 20:52:50 [WARNING] sync: ⚠️ Match tio:u75Lhej7MshNP übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
 2026-01-04 20:52:50 [WARNING] sync: ⚠️ Match tio:u75Lhej7MshNP übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
+2026-01-08 15:43:49 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ mit params: {'includeMatches': 'true', 'includeStandings': 'true', 'includeCourts': 'true'}
+2026-01-08 15:43:49 [INFO] sync: 📡 API Response Status: 200
+2026-01-08 15:43:49 [INFO] sync: 📄 API response saved to logs/api_responses/tournament_tio:AXb7FzJekjxGZ.json
+2026-01-08 15:43:49 [INFO] sync: 🔍 DEBUG: Courts in Tournament-Response: 0
+2026-01-08 15:43:49 [WARNING] sync: ⚠️ KEIN 'courts' Array in Tournament-Response!
+2026-01-08 15:43:49 [WARNING] sync:    → Courts müssen separat über /courts endpoint geladen werden
+2026-01-08 15:43:49 [INFO] sync: 
+================================================================================
+2026-01-08 15:43:49 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:AXb7FzJekjxGZ
+2026-01-08 15:43:49 [INFO] sync: ================================================================================
+2026-01-08 15:43:49 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-08 15:43:49 [INFO] sync:   📞 Lade Courts über separaten API-Call...
+2026-01-08 15:43:49 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:AXb7FzJekjxGZ/courts
+2026-01-08 15:43:49 [INFO] sync: 📡 Courts Response Status: 200
+2026-01-08 15:43:49 [INFO] sync: ✅ Courts API returned: 8 courts
+2026-01-08 15:43:49 [INFO] sync:   ✅ 8 Courts von API erhalten
+2026-01-08 15:43:49 [INFO] sync: ✅ Tournament: testmulti (finished)
+2026-01-08 15:43:49 [INFO] sync:    → Courts Count: 8
+2026-01-08 15:43:49 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-08 15:43:49 [INFO] sync: 💾 Speichere 8 Courts in DB...
+2026-01-08 15:43:49 [INFO] sync: ✅ Courts: 8 gespeichert
+2026-01-08 15:43:49 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-08 15:43:49 [INFO] sync: 📥 3 Disciplines in API-Response
+2026-01-08 15:43:50 [INFO] sync: ✅ Disciplines: 3
+2026-01-08 15:43:50 [INFO] sync: ✅ Stages: 5
+2026-01-08 15:43:50 [INFO] sync: ✅ Groups: 5
+2026-01-08 15:43:50 [INFO] sync: 
+🔹 STEP 4: Entries
+2026-01-08 15:43:50 [INFO] sync: 📥 30 Tournament-Entries geladen
+2026-01-08 15:43:50 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '08-1865'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)

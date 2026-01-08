@@ -810,3 +810,82 @@ DETAIL:  Key (webhook_id)=(84) already exists.
 [SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
 [parameters: {'webhook_id': 84, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 51, 41456), 'success': True, 'error_message': None}]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-08 15:43:50 [ERROR] errors: Turnier tio:AXb7FzJekjxGZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '08-1865'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 301, in sync_tournament_data
+    db.session.merge(entry)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 1553, in merge
+    return self._proxied.merge(instance, load=load, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3945, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4023, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3680, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '08-1865'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
