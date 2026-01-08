@@ -1,0 +1,43 @@
+{
+  "id": "tio:9KkWIDKBzAPvZ",
+  "name": "sauber",
+  "description": "",
+  "startTime": "2026-01-05T23:00:00.000Z",
+  "endTime": "2026-01-04T20:51:01.404Z",
+  "state": "running",
+  "disciplines": [
+    {
+      "id": "tio:ALRDLl7DwJQcf",
+      "name": "Discipline 1",
+      "shortName": "D1",
+      "entryType": "monster_dyp",
+      "stages": [
+        {
+          "id": "tio:zNwQOVqUTjsT7",
+          "state": "running",
+          "groups": [
+            {
+              "id": "tio:VnnXch2renFxJ",
+              "name": "COMMON-QUALIFICATION",
+              "tournamentMode": "monster_dyp",
+              "state": "running",
+              "options": {
+                "eliminationThirdPlace": true,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

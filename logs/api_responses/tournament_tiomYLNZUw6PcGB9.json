@@ -4,7 +4,7 @@
   "description": "",
   "startTime": "2026-01-05T23:00:00.000Z",
   "endTime": "2026-01-04T19:35:16.076Z",
-  "state": "running",
+  "state": "finished",
   "disciplines": [
     {
       "id": "tio:e5Y3TUpT9syr3",
@@ -14,13 +14,13 @@
       "stages": [
         {
           "id": "tio:YZFDdpJzSqISh",
-          "state": "running",
+          "state": "finished",
           "groups": [
             {
               "id": "tio:o5CFp2HgUed76",
               "name": "COMMON-QUALIFICATION",
               "tournamentMode": "monster_dyp",
-              "state": "running",
+              "state": "finished",
               "options": {
                 "eliminationThirdPlace": true,
                 "matchConfigurations": [
@@ -30,6 +30,31 @@
                     "numPoints": 7,
                     "numSets": 1,
                     "twoAhead": false,
+                    "quickEntry": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "tio:mlqYv13eyxpKa",
+          "state": "finished",
+          "groups": [
+            {
+              "id": "tio:C2NfSsSyRFlWK",
+              "name": "Profi",
+              "tournamentMode": "elimination",
+              "state": "finished",
+              "options": {
+                "eliminationThirdPlace": false,
+                "matchConfigurations": [
+                  {
+                    "name": "Encounter 1",
+                    "draw": false,
+                    "numPoints": 7,
+                    "numSets": 1,
+                    "twoAhead": true,
                     "quickEntry": true
                   }
                 ]

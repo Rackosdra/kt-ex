@@ -1,0 +1,384 @@
+2026-01-04 20:31:21 [WARNING] sync: ⚠️ Match tio:rLujMYrz8ExaO übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:31:21 [WARNING] sync: ⚠️ Match tio:rLujMYrz8ExaO übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:19 [WARNING] sync: ⚠️ Match tio:UZWpe16ck0i0d übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:19 [WARNING] sync: ⚠️ Match tio:UZWpe16ck0i0d übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:39 [WARNING] sync: ⚠️ Match tio:y0Xf5Gb3gsc1g übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:39 [WARNING] sync: ⚠️ Match tio:y0Xf5Gb3gsc1g übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:40 [WARNING] sync: ⚠️ Match tio:r8vMJCfPZSnbK übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:40 [WARNING] sync: ⚠️ Match tio:r8vMJCfPZSnbK übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:43 [WARNING] sync: ⚠️ Match tio:y0Xf5Gb3gsc1g übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:43 [WARNING] sync: ⚠️ Match tio:y0Xf5Gb3gsc1g übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:46 [WARNING] sync: ⚠️ Match tio:r8vMJCfPZSnbK übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:46 [WARNING] sync: ⚠️ Match tio:r8vMJCfPZSnbK übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:59 [WARNING] sync: ⚠️ Match tio:EUN9ele9BZIFT übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:59 [WARNING] sync: ⚠️ Match tio:EUN9ele9BZIFT übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:39:59 [WARNING] sync: ⚠️ Match tio:uQXupZrokjaDD übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:00 [WARNING] sync: ⚠️ Match tio:uQXupZrokjaDD übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:02 [WARNING] sync: ⚠️ Match tio:uQXupZrokjaDD übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:02 [WARNING] sync: ⚠️ Match tio:uQXupZrokjaDD übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:05 [WARNING] sync: ⚠️ Match tio:EUN9ele9BZIFT übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:05 [WARNING] sync: ⚠️ Match tio:EUN9ele9BZIFT übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:06 [WARNING] sync: ⚠️ Match tio:isE4iv0adoRZL übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:06 [WARNING] sync: ⚠️ Match tio:isE4iv0adoRZL übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:07 [WARNING] sync: ⚠️ Match tio:Z8b4zLzmQ3drO übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:07 [WARNING] sync: ⚠️ Match tio:Z8b4zLzmQ3drO übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:13 [WARNING] sync: ⚠️ Match tio:isE4iv0adoRZL übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:13 [WARNING] sync: ⚠️ Match tio:isE4iv0adoRZL übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:16 [WARNING] sync: ⚠️ Match tio:Z8b4zLzmQ3drO übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:16 [WARNING] sync: ⚠️ Match tio:Z8b4zLzmQ3drO übersprungen: Group tio:o5CFp2HgUed76 fehlt in DB
+2026-01-04 20:40:38 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:mYLNZUw6PcGB9
+2026-01-04 20:40:38 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:40:38 [INFO] sync: 
+================================================================================
+2026-01-04 20:40:38 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:mYLNZUw6PcGB9
+2026-01-04 20:40:38 [INFO] sync: ================================================================================
+2026-01-04 20:40:38 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:40:38 [INFO] sync: ✅ Tournament: wedwdwe (running)
+2026-01-04 20:40:38 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:40:38 [WARNING] sync: ⚠️ Keine Courts in API-Response
+2026-01-04 20:40:38 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:40:38 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:40:39 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:40:39 [INFO] sync: ✅ Stages: 2
+2026-01-04 20:40:39 [INFO] sync: ✅ Groups: 2
+2026-01-04 20:40:39 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:40:39 [INFO] sync: 📊 Entries API: 8 entries
+2026-01-04 20:40:39 [INFO] sync: 📥 8 Tournament-Entries geladen
+2026-01-04 20:40:39 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:40:39 [INFO] sync: 📊 Entries API: 8 entries
+2026-01-04 20:40:39 [INFO] sync:   ✅ 8 Entries
+2026-01-04 20:40:39 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '05-4192'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:40:43 [WARNING] sync: ⚠️ Match tio:Wzm4VdE36Rw8I übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:43 [WARNING] sync: ⚠️ Match tio:Wzm4VdE36Rw8I übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:43 [WARNING] sync: ⚠️ Match tio:3pOo2uFstjgzQ übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:43 [WARNING] sync: ⚠️ Match tio:3pOo2uFstjgzQ übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:46 [WARNING] sync: ⚠️ Match tio:WD4sG3SOFaTyC übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:46 [WARNING] sync: ⚠️ Match tio:WD4sG3SOFaTyC übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:46 [WARNING] sync: ⚠️ Match tio:3pOo2uFstjgzQ übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:46 [WARNING] sync: ⚠️ Match tio:3pOo2uFstjgzQ übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:50 [WARNING] sync: ⚠️ Match tio:NV01RguyVFOYY übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:50 [WARNING] sync: ⚠️ Match tio:NV01RguyVFOYY übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:50 [WARNING] sync: ⚠️ Match tio:kKk8WdOTn1HBA übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:50 [WARNING] sync: ⚠️ Match tio:kKk8WdOTn1HBA übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:53 [WARNING] sync: ⚠️ Match tio:BDBt2xpdkUJYc übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:53 [WARNING] sync: ⚠️ Match tio:BDBt2xpdkUJYc übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:53 [WARNING] sync: ⚠️ Match tio:kKk8WdOTn1HBA übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:40:54 [WARNING] sync: ⚠️ Match tio:kKk8WdOTn1HBA übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:10 [WARNING] sync: ⚠️ Match tio:kKk8WdOTn1HBA übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:10 [WARNING] sync: ⚠️ Match tio:kKk8WdOTn1HBA übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:10 [WARNING] sync: ⚠️ Match tio:88VT0eyAgd8Fs übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:10 [WARNING] sync: ⚠️ Match tio:88VT0eyAgd8Fs übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:10 [WARNING] sync: ⚠️ Match tio:55PcOZOfLilut übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:10 [WARNING] sync: ⚠️ Match tio:55PcOZOfLilut übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:12 [WARNING] sync: ⚠️ Match tio:3pOo2uFstjgzQ übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:12 [WARNING] sync: ⚠️ Match tio:3pOo2uFstjgzQ übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:12 [WARNING] sync: ⚠️ Match tio:88VT0eyAgd8Fs übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:12 [WARNING] sync: ⚠️ Match tio:88VT0eyAgd8Fs übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:13 [WARNING] sync: ⚠️ Match tio:55PcOZOfLilut übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:13 [WARNING] sync: ⚠️ Match tio:55PcOZOfLilut übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:49 [WARNING] sync: ⚠️ Match tio:55PcOZOfLilut übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:49 [WARNING] sync: ⚠️ Match tio:55PcOZOfLilut übersprungen: Group tio:C2NfSsSyRFlWK fehlt in DB
+2026-01-04 20:41:52 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:mYLNZUw6PcGB9
+2026-01-04 20:41:52 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:41:52 [INFO] sync: 
+================================================================================
+2026-01-04 20:41:52 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:mYLNZUw6PcGB9
+2026-01-04 20:41:52 [INFO] sync: ================================================================================
+2026-01-04 20:41:52 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:41:52 [INFO] sync: ✅ Tournament: wedwdwe (finished)
+2026-01-04 20:41:52 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:41:52 [WARNING] sync: ⚠️ Keine Courts in API-Response
+2026-01-04 20:41:52 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:41:52 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:41:52 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:41:52 [INFO] sync: ✅ Stages: 2
+2026-01-04 20:41:52 [INFO] sync: ✅ Groups: 2
+2026-01-04 20:41:52 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:41:52 [INFO] sync: 📊 Entries API: 8 entries
+2026-01-04 20:41:52 [INFO] sync: 📥 8 Tournament-Entries geladen
+2026-01-04 20:41:52 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:41:52 [INFO] sync: 📊 Entries API: 8 entries
+2026-01-04 20:41:52 [INFO] sync:   ✅ 8 Entries
+2026-01-04 20:41:52 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '05-4192'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:51:58 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:9KkWIDKBzAPvZ
+2026-01-04 20:51:59 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:51:59 [INFO] sync: 
+================================================================================
+2026-01-04 20:51:59 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:9KkWIDKBzAPvZ
+2026-01-04 20:51:59 [INFO] sync: ================================================================================
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:51:59 [INFO] sync: ✅ Tournament: sauber (check-in)
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:51:59 [INFO] sync: ⚠️ Keine Courts in Tournament-Response - lade separat über API...
+2026-01-04 20:51:59 [INFO] sync: 📥 3 Courts gefunden
+2026-01-04 20:51:59 [INFO] sync: ✅ Courts: 3 gespeichert
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:51:59 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:51:59 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:51:59 [INFO] sync: ✅ Stages: 1
+2026-01-04 20:51:59 [INFO] sync: ✅ Groups: 0
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:51:59 [INFO] sync: 📊 Entries API: 0 entries
+2026-01-04 20:51:59 [ERROR] sync: ❌ Tournament-Entries konnten nicht geladen werden: None
+2026-01-04 20:51:59 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:51:59 [INFO] sync: 📊 Entries API: 0 entries
+2026-01-04 20:51:59 [INFO] sync: ✅ Entries: 0 gespeichert
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 STEP 5: Standings
+2026-01-04 20:51:59 [INFO] sync: ✅ Standings: 0
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 STEP 6: Matches
+2026-01-04 20:51:59 [INFO] sync: ✅ Matches: 0 verarbeitet
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 FINAL: Commit to Database
+2026-01-04 20:51:59 [INFO] sync: ✅ Transaction committed
+2026-01-04 20:51:59 [INFO] sync: 
+🔹 VERIFICATION:
+2026-01-04 20:52:00 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:00 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:00 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:52:00 [INFO] sync: 
+================================================================================
+2026-01-04 20:52:00 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:00 [INFO] sync: ================================================================================
+2026-01-04 20:52:00 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:52:00 [INFO] sync: ✅ Tournament: sauber (check-in)
+2026-01-04 20:52:00 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:52:00 [INFO] sync: ⚠️ Keine Courts in Tournament-Response - lade separat über API...
+2026-01-04 20:52:00 [INFO] sync: 📥 3 Courts gefunden
+2026-01-04 20:52:00 [INFO] sync: ✅ Courts: 3 gespeichert
+2026-01-04 20:52:00 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:52:00 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:52:00 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:52:00 [INFO] sync: ✅ Stages: 1
+2026-01-04 20:52:00 [INFO] sync: ✅ Groups: 0
+2026-01-04 20:52:00 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:52:01 [INFO] sync: 📊 Entries API: 0 entries
+2026-01-04 20:52:01 [ERROR] sync: ❌ Tournament-Entries konnten nicht geladen werden: None
+2026-01-04 20:52:01 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:52:01 [INFO] sync: 📊 Entries API: 0 entries
+2026-01-04 20:52:01 [INFO] sync: ✅ Entries: 0 gespeichert
+2026-01-04 20:52:01 [INFO] sync: 
+🔹 STEP 5: Standings
+2026-01-04 20:52:01 [INFO] sync: ✅ Standings: 0
+2026-01-04 20:52:01 [INFO] sync: 
+🔹 STEP 6: Matches
+2026-01-04 20:52:01 [INFO] sync: ✅ Matches: 0 verarbeitet
+2026-01-04 20:52:01 [INFO] sync: 
+🔹 FINAL: Commit to Database
+2026-01-04 20:52:01 [INFO] sync: ✅ Transaction committed
+2026-01-04 20:52:01 [INFO] sync: 
+🔹 VERIFICATION:
+2026-01-04 20:52:01 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:01 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:01 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:52:01 [INFO] sync: 
+================================================================================
+2026-01-04 20:52:01 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:01 [INFO] sync: ================================================================================
+2026-01-04 20:52:01 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:52:01 [INFO] sync: ✅ Tournament: sauber (check-in)
+2026-01-04 20:52:01 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:52:01 [INFO] sync: ⚠️ Keine Courts in Tournament-Response - lade separat über API...
+2026-01-04 20:52:02 [INFO] sync: 📥 3 Courts gefunden
+2026-01-04 20:52:02 [INFO] sync: ✅ Courts: 3 gespeichert
+2026-01-04 20:52:02 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:52:02 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:52:02 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:52:02 [INFO] sync: ✅ Stages: 1
+2026-01-04 20:52:02 [INFO] sync: ✅ Groups: 0
+2026-01-04 20:52:02 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:52:02 [INFO] sync: 📊 Entries API: 0 entries
+2026-01-04 20:52:02 [ERROR] sync: ❌ Tournament-Entries konnten nicht geladen werden: None
+2026-01-04 20:52:02 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:52:02 [INFO] sync: 📊 Entries API: 0 entries
+2026-01-04 20:52:02 [INFO] sync: ✅ Entries: 0 gespeichert
+2026-01-04 20:52:02 [INFO] sync: 
+🔹 STEP 5: Standings
+2026-01-04 20:52:02 [INFO] sync: ✅ Standings: 0
+2026-01-04 20:52:02 [INFO] sync: 
+🔹 STEP 6: Matches
+2026-01-04 20:52:02 [INFO] sync: ✅ Matches: 0 verarbeitet
+2026-01-04 20:52:02 [INFO] sync: 
+🔹 FINAL: Commit to Database
+2026-01-04 20:52:02 [INFO] sync: ✅ Transaction committed
+2026-01-04 20:52:02 [INFO] sync: 
+🔹 VERIFICATION:
+2026-01-04 20:52:02 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:05 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:05 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:52:05 [INFO] sync: 
+================================================================================
+2026-01-04 20:52:05 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:05 [INFO] sync: ================================================================================
+2026-01-04 20:52:05 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:52:05 [INFO] sync: ✅ Tournament: sauber (check-in)
+2026-01-04 20:52:05 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:52:05 [INFO] sync: ⚠️ Keine Courts in Tournament-Response - lade separat über API...
+2026-01-04 20:52:05 [INFO] sync: 📥 3 Courts gefunden
+2026-01-04 20:52:05 [INFO] sync: ✅ Courts: 3 gespeichert
+2026-01-04 20:52:05 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:52:05 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:52:05 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:52:05 [INFO] sync: ✅ Stages: 1
+2026-01-04 20:52:05 [INFO] sync: ✅ Groups: 0
+2026-01-04 20:52:05 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:52:05 [INFO] sync: 📊 Entries API: 10 entries
+2026-01-04 20:52:05 [INFO] sync: 📥 10 Tournament-Entries geladen
+2026-01-04 20:52:05 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:52:06 [INFO] sync: 📊 Entries API: 10 entries
+2026-01-04 20:52:06 [INFO] sync:   ✅ 10 Entries
+2026-01-04 20:52:06 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:26 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:26 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:52:26 [INFO] sync: 
+================================================================================
+2026-01-04 20:52:26 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:26 [INFO] sync: ================================================================================
+2026-01-04 20:52:26 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:52:26 [INFO] sync: ✅ Tournament: sauber (ready)
+2026-01-04 20:52:26 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:52:26 [INFO] sync: ⚠️ Keine Courts in Tournament-Response - lade separat über API...
+2026-01-04 20:52:27 [INFO] sync: 📥 3 Courts gefunden
+2026-01-04 20:52:27 [INFO] sync: ✅ Courts: 3 gespeichert
+2026-01-04 20:52:27 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:52:27 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:52:27 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:52:27 [INFO] sync: ✅ Stages: 1
+2026-01-04 20:52:27 [INFO] sync: ✅ Groups: 1
+2026-01-04 20:52:27 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:52:27 [INFO] sync: 📊 Entries API: 10 entries
+2026-01-04 20:52:27 [INFO] sync: 📥 10 Tournament-Entries geladen
+2026-01-04 20:52:27 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:52:27 [INFO] sync: 📊 Entries API: 10 entries
+2026-01-04 20:52:27 [INFO] sync:   ✅ 10 Entries
+2026-01-04 20:52:27 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:28 [INFO] sync: 🌐 API-Call: GET https://api.tournament.io/v1/public/tournaments/tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:28 [INFO] sync: 📡 API Response Status: 200
+2026-01-04 20:52:28 [INFO] sync: 
+================================================================================
+2026-01-04 20:52:28 [INFO] sync: 🔄 STARTE SYNC FÜR TOURNAMENT: tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:28 [INFO] sync: ================================================================================
+2026-01-04 20:52:28 [INFO] sync: 
+🔹 STEP 1: Tournament-Daten
+2026-01-04 20:52:28 [INFO] sync: ✅ Tournament: sauber (running)
+2026-01-04 20:52:28 [INFO] sync: 
+🔹 STEP 2: Courts
+2026-01-04 20:52:28 [INFO] sync: ⚠️ Keine Courts in Tournament-Response - lade separat über API...
+2026-01-04 20:52:28 [INFO] sync: 📥 3 Courts gefunden
+2026-01-04 20:52:28 [INFO] sync: ✅ Courts: 3 gespeichert
+2026-01-04 20:52:28 [INFO] sync: 
+🔹 STEP 3: Disciplines, Stages, Groups
+2026-01-04 20:52:28 [INFO] sync: 📥 1 Disciplines in API-Response
+2026-01-04 20:52:28 [INFO] sync: ✅ Disciplines: 1
+2026-01-04 20:52:28 [INFO] sync: ✅ Stages: 1
+2026-01-04 20:52:28 [INFO] sync: ✅ Groups: 1
+2026-01-04 20:52:28 [INFO] sync: 
+🔹 STEP 4: Entries mit Discipline-Zuordnung
+2026-01-04 20:52:28 [INFO] sync: 📊 Entries API: 10 entries
+2026-01-04 20:52:28 [INFO] sync: 📥 10 Tournament-Entries geladen
+2026-01-04 20:52:28 [INFO] sync:   📊 Lade Entries für Discipline 'Discipline 1'...
+2026-01-04 20:52:29 [INFO] sync: 📊 Entries API: 10 entries
+2026-01-04 20:52:29 [INFO] sync:   ✅ 10 Entries
+2026-01-04 20:52:29 [ERROR] sync: ❌ ROLLBACK: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:31 [WARNING] sync: ⚠️ Match tio:WNjz3KroHYgp3 übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
+2026-01-04 20:52:31 [WARNING] sync: ⚠️ Match tio:u75Lhej7MshNP übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
+2026-01-04 20:52:48 [WARNING] sync: ⚠️ Match tio:WNjz3KroHYgp3 übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
+2026-01-04 20:52:48 [WARNING] sync: ⚠️ Match tio:WNjz3KroHYgp3 übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
+2026-01-04 20:52:50 [WARNING] sync: ⚠️ Match tio:u75Lhej7MshNP übersprungen: Group tio:VnnXch2renFxJ fehlt in DB
+2026-01-04 20:52:50 [WARNING] sync: ⚠️ Match tio:u75Lhej7MshNP übersprungen: Group tio:VnnXch2renFxJ fehlt in DB

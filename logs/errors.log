@@ -1,0 +1,812 @@
+2026-01-04 20:31:22 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(57) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 57, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 31, 21, 698747), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:39:19 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(58) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 58, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 39, 19, 730850), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:39:40 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(59) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 59, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 39, 40, 224861), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:39:43 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(60) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 60, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 39, 43, 601464), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:39:47 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(61) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 61, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 39, 47, 32505), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:00 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(62) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 62, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 0, 55220), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:02 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(63) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 63, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 2, 748931), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:05 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(64) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 64, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 5, 741326), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:07 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(65) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 65, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 7, 247579), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:13 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(66) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 66, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 13, 674595), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:16 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(67) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 67, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 16, 618577), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:39 [ERROR] errors: Turnier tio:mYLNZUw6PcGB9: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '05-4192'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 309, in sync_tournament_data
+    entries_saved = _sync_entries(t_id, data.get('disciplines', []))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/sync_service.py", line 525, in _sync_entries
+    db.session.merge(entry)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 1553, in merge
+    return self._proxied.merge(instance, load=load, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3945, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4023, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3680, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '05-4192'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:40:39 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(68) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 68, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["EntryListUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 39, 527689), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 1: ...s_name, entries.entry_type AS entries_entry_type ... (284 characters truncated) ... ne_ids \nFROM entries \nWHERE entries.id = %(pk_1)s]\n[parameters: {'pk_1': '05-4192'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:44 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(69) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 69, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 44, 19024), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:47 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(70) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 70, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 47, 36526), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:50 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(71) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 71, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 50, 392676), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:40:54 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(72) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 72, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 40, 54, 133318), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:41:10 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(73) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 73, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "MatchUpdated", "MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 41, 10, 647956), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:41:13 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(74) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 74, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "MatchUpdated", "MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 41, 13, 180903), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:41:49 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(75) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 75, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 41, 49, 454886), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:41:52 [ERROR] errors: Turnier tio:mYLNZUw6PcGB9: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '05-4192'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 309, in sync_tournament_data
+    entries_saved = _sync_entries(t_id, data.get('disciplines', []))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/sync_service.py", line 525, in _sync_entries
+    db.session.merge(entry)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 1553, in merge
+    return self._proxied.merge(instance, load=load, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3945, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4023, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3680, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '05-4192'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:41:52 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(76) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 76, 'tournament_id': 'tio:mYLNZUw6PcGB9', 'event_types': '["TournamentUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 41, 52, 909423), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 1: ...s_name, entries.entry_type AS entries_entry_type ... (284 characters truncated) ... ne_ids \nFROM entries \nWHERE entries.id = %(pk_1)s]\n[parameters: {'pk_1': '05-4192'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:51:59 [ERROR] errors: Turnier tio:9KkWIDKBzAPvZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 325, in sync_tournament_data
+    _verify_sync(t_id, entries_saved)
+  File "/app/app/services/sync_service.py", line 652, in _verify_sync
+    "entries": Entry.query.filter_by(tournament_id=t_id).count(),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 3146, in count
+    self._legacy_from_self(col).enable_eagerloads(False).scalar()
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2835, in scalar
+    ret = self.one()
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2808, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:01 [ERROR] errors: Turnier tio:9KkWIDKBzAPvZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 325, in sync_tournament_data
+    _verify_sync(t_id, entries_saved)
+  File "/app/app/services/sync_service.py", line 652, in _verify_sync
+    "entries": Entry.query.filter_by(tournament_id=t_id).count(),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 3146, in count
+    self._legacy_from_self(col).enable_eagerloads(False).scalar()
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2835, in scalar
+    ret = self.one()
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2808, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:01 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(77) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 77, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["TournamentAdded", "TournamentUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 1, 375142), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 2: ...s_name, entries.entry_type AS entries_entry_type ... (373 characters truncated) ... %(tournament_id_1)s) AS anon_1]\n[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:02 [ERROR] errors: Turnier tio:9KkWIDKBzAPvZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 325, in sync_tournament_data
+    _verify_sync(t_id, entries_saved)
+  File "/app/app/services/sync_service.py", line 652, in _verify_sync
+    "entries": Entry.query.filter_by(tournament_id=t_id).count(),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 3146, in count
+    self._legacy_from_self(col).enable_eagerloads(False).scalar()
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2835, in scalar
+    ret = self.one()
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2808, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:02 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(78) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 78, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["TournamentUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 2, 424442), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 2: ...s_name, entries.entry_type AS entries_entry_type ... (373 characters truncated) ... %(tournament_id_1)s) AS anon_1]\n[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:06 [ERROR] errors: Turnier tio:9KkWIDKBzAPvZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 309, in sync_tournament_data
+    entries_saved = _sync_entries(t_id, data.get('disciplines', []))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/sync_service.py", line 544, in _sync_entries
+    db.session.merge(entry)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 1553, in merge
+    return self._proxied.merge(instance, load=load, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3945, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4023, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3680, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:06 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(79) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 79, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["EntryListUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 6, 95883), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 1: ...s_name, entries.entry_type AS entries_entry_type ... (284 characters truncated) ... ne_ids \nFROM entries \nWHERE entries.id = %(pk_1)s]\n[parameters: {'pk_1': '07-0448'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:27 [ERROR] errors: Turnier tio:9KkWIDKBzAPvZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 309, in sync_tournament_data
+    entries_saved = _sync_entries(t_id, data.get('disciplines', []))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/sync_service.py", line 544, in _sync_entries
+    db.session.merge(entry)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 1553, in merge
+    return self._proxied.merge(instance, load=load, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3945, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4023, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3680, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:27 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(80) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 80, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["TournamentUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 27, 637517), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 1: ...s_name, entries.entry_type AS entries_entry_type ... (284 characters truncated) ... ne_ids \nFROM entries \nWHERE entries.id = %(pk_1)s]\n[parameters: {'pk_1': '07-0448'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:29 [ERROR] errors: Turnier tio:9KkWIDKBzAPvZ: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/app/services/sync_service.py", line 309, in sync_tournament_data
+    entries_saved = _sync_entries(t_id, data.get('disciplines', []))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/services/sync_service.py", line 544, in _sync_entries
+    db.session.merge(entry)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 1553, in merge
+    return self._proxied.merge(instance, load=load, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3945, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4023, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3680, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3859, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 1: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.id = %(pk_1)s]
+[parameters: {'pk_1': '07-0448'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:29 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(81) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 81, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["TournamentUpdated"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 29, 298278), 'success': False, 'error_message': "DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist\nLINE 1: ...s_name, entries.entry_type AS entries_entry_type ... (284 characters truncated) ... ne_ids \nFROM entries \nWHERE entries.id = %(pk_1)s]\n[parameters: {'pk_1': '07-0448'}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:31 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(82) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 82, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["CourtMatchChanged", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 31, 934524), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:50 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(83) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 83, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 50, 108758), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-04 20:52:51 [ERROR] errors: Fehler beim Webhook-Logging: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_webhook_logs_webhook_id"
+DETAIL:  Key (webhook_id)=(84) already exists.
+
+[SQL: INSERT INTO webhook_logs (webhook_id, tournament_id, event_types, processed_at, success, error_message) VALUES (%(webhook_id)s, %(tournament_id)s, %(event_types)s::JSONB, %(processed_at)s, %(success)s, %(error_message)s) RETURNING webhook_logs.id]
+[parameters: {'webhook_id': 84, 'tournament_id': 'tio:9KkWIDKBzAPvZ', 'event_types': '["MatchUpdated", "CourtMatchChanged"]', 'processed_at': datetime.datetime(2026, 1, 4, 20, 52, 51, 41456), 'success': True, 'error_message': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

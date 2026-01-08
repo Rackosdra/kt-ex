@@ -1,0 +1,180 @@
+2026-01-04 20:31:19 [INFO] webhooks: 📨 Webhook #57 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:31:20 [INFO] webhooks: 📝 Webhook #57 geloggt (Duplikate erlaubt)
+2026-01-04 20:31:20 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:31:20 [INFO] webhooks:   🎯 Synchronisiere Match: tio:rLujMYrz8ExaO
+2026-01-04 20:31:21 [INFO] webhooks:   ✅ Match tio:rLujMYrz8ExaO synchronisiert
+2026-01-04 20:31:21 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:39:19 [INFO] webhooks: 📨 Webhook #58 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:39:19 [INFO] webhooks: 📝 Webhook #58 geloggt (Duplikate erlaubt)
+2026-01-04 20:39:19 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:39:19 [INFO] webhooks:   🎯 Synchronisiere Match: tio:UZWpe16ck0i0d
+2026-01-04 20:39:19 [INFO] webhooks:   ✅ Match tio:UZWpe16ck0i0d synchronisiert
+2026-01-04 20:39:19 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:39:39 [INFO] webhooks: 📨 Webhook #59 | Tournament: tio:mYLNZUw6PcGB9 | Events: 4 (4x CourtMatchChanged)
+2026-01-04 20:39:39 [INFO] webhooks: 📝 Webhook #59 geloggt (Duplikate erlaubt)
+2026-01-04 20:39:39 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:39:39 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:39:39 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:39:39 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:39:40 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:39:43 [INFO] webhooks: 📨 Webhook #60 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:39:43 [INFO] webhooks: 📝 Webhook #60 geloggt (Duplikate erlaubt)
+2026-01-04 20:39:43 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:39:43 [INFO] webhooks:   🎯 Synchronisiere Match: tio:y0Xf5Gb3gsc1g
+2026-01-04 20:39:43 [INFO] webhooks:   ✅ Match tio:y0Xf5Gb3gsc1g synchronisiert
+2026-01-04 20:39:43 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:39:46 [INFO] webhooks: 📨 Webhook #61 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:39:46 [INFO] webhooks: 📝 Webhook #61 geloggt (Duplikate erlaubt)
+2026-01-04 20:39:46 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:39:46 [INFO] webhooks:   🎯 Synchronisiere Match: tio:r8vMJCfPZSnbK
+2026-01-04 20:39:46 [INFO] webhooks:   ✅ Match tio:r8vMJCfPZSnbK synchronisiert
+2026-01-04 20:39:46 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:39:59 [INFO] webhooks: 📨 Webhook #62 | Tournament: tio:mYLNZUw6PcGB9 | Events: 4 (4x CourtMatchChanged)
+2026-01-04 20:39:59 [INFO] webhooks: 📝 Webhook #62 geloggt (Duplikate erlaubt)
+2026-01-04 20:39:59 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:39:59 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:39:59 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:39:59 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:39:59 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:40:02 [INFO] webhooks: 📨 Webhook #63 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:02 [INFO] webhooks: 📝 Webhook #63 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:02 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:02 [INFO] webhooks:   🎯 Synchronisiere Match: tio:uQXupZrokjaDD
+2026-01-04 20:40:02 [INFO] webhooks:   ✅ Match tio:uQXupZrokjaDD synchronisiert
+2026-01-04 20:40:02 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:40:05 [INFO] webhooks: 📨 Webhook #64 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:05 [INFO] webhooks: 📝 Webhook #64 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:05 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:05 [INFO] webhooks:   🎯 Synchronisiere Match: tio:EUN9ele9BZIFT
+2026-01-04 20:40:05 [INFO] webhooks:   ✅ Match tio:EUN9ele9BZIFT synchronisiert
+2026-01-04 20:40:05 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:40:06 [INFO] webhooks: 📨 Webhook #65 | Tournament: tio:mYLNZUw6PcGB9 | Events: 4 (4x CourtMatchChanged)
+2026-01-04 20:40:06 [INFO] webhooks: 📝 Webhook #65 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:06 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:06 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:40:06 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:40:06 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:40:07 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:40:13 [INFO] webhooks: 📨 Webhook #66 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:13 [INFO] webhooks: 📝 Webhook #66 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:13 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:13 [INFO] webhooks:   🎯 Synchronisiere Match: tio:isE4iv0adoRZL
+2026-01-04 20:40:13 [INFO] webhooks:   ✅ Match tio:isE4iv0adoRZL synchronisiert
+2026-01-04 20:40:13 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:40:16 [INFO] webhooks: 📨 Webhook #67 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:16 [INFO] webhooks: 📝 Webhook #67 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:16 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:16 [INFO] webhooks:   🎯 Synchronisiere Match: tio:Z8b4zLzmQ3drO
+2026-01-04 20:40:16 [INFO] webhooks:   ✅ Match tio:Z8b4zLzmQ3drO synchronisiert
+2026-01-04 20:40:16 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:40:38 [INFO] webhooks: 📨 Webhook #68 | Tournament: tio:mYLNZUw6PcGB9 | Events: 1 (1x EntryListUpdated)
+2026-01-04 20:40:38 [INFO] webhooks: 📝 Webhook #68 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:38 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:43 [INFO] webhooks: 📨 Webhook #69 | Tournament: tio:mYLNZUw6PcGB9 | Events: 3 (2x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:43 [INFO] webhooks: 📝 Webhook #69 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:43 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:43 [INFO] webhooks:   🎯 Synchronisiere Match: tio:Wzm4VdE36Rw8I
+2026-01-04 20:40:43 [INFO] webhooks:   ✅ Match tio:Wzm4VdE36Rw8I synchronisiert
+2026-01-04 20:40:43 [INFO] webhooks:   🎯 Synchronisiere Match: tio:3pOo2uFstjgzQ
+2026-01-04 20:40:43 [INFO] webhooks:   ✅ Match tio:3pOo2uFstjgzQ synchronisiert
+2026-01-04 20:40:43 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:40:46 [INFO] webhooks: 📨 Webhook #70 | Tournament: tio:mYLNZUw6PcGB9 | Events: 3 (2x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:46 [INFO] webhooks: 📝 Webhook #70 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:46 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:46 [INFO] webhooks:   🎯 Synchronisiere Match: tio:WD4sG3SOFaTyC
+2026-01-04 20:40:46 [INFO] webhooks:   ✅ Match tio:WD4sG3SOFaTyC synchronisiert
+2026-01-04 20:40:46 [INFO] webhooks:   🎯 Synchronisiere Match: tio:3pOo2uFstjgzQ
+2026-01-04 20:40:46 [INFO] webhooks:   ✅ Match tio:3pOo2uFstjgzQ synchronisiert
+2026-01-04 20:40:46 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:40:49 [INFO] webhooks: 📨 Webhook #71 | Tournament: tio:mYLNZUw6PcGB9 | Events: 3 (2x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:49 [INFO] webhooks: 📝 Webhook #71 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:49 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:49 [INFO] webhooks:   🎯 Synchronisiere Match: tio:NV01RguyVFOYY
+2026-01-04 20:40:50 [INFO] webhooks:   ✅ Match tio:NV01RguyVFOYY synchronisiert
+2026-01-04 20:40:50 [INFO] webhooks:   🎯 Synchronisiere Match: tio:kKk8WdOTn1HBA
+2026-01-04 20:40:50 [INFO] webhooks:   ✅ Match tio:kKk8WdOTn1HBA synchronisiert
+2026-01-04 20:40:50 [INFO] webhooks:   🏓 Aktualisiere Court: tio:Wg3lVh0nnBoCj
+2026-01-04 20:40:53 [INFO] webhooks: 📨 Webhook #72 | Tournament: tio:mYLNZUw6PcGB9 | Events: 3 (2x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:40:53 [INFO] webhooks: 📝 Webhook #72 geloggt (Duplikate erlaubt)
+2026-01-04 20:40:53 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:40:53 [INFO] webhooks:   🎯 Synchronisiere Match: tio:BDBt2xpdkUJYc
+2026-01-04 20:40:53 [INFO] webhooks:   ✅ Match tio:BDBt2xpdkUJYc synchronisiert
+2026-01-04 20:40:53 [INFO] webhooks:   🎯 Synchronisiere Match: tio:kKk8WdOTn1HBA
+2026-01-04 20:40:54 [INFO] webhooks:   ✅ Match tio:kKk8WdOTn1HBA synchronisiert
+2026-01-04 20:40:54 [INFO] webhooks:   🏓 Aktualisiere Court: tio:mksYGNtV0Pzhi
+2026-01-04 20:41:09 [INFO] webhooks: 📨 Webhook #73 | Tournament: tio:mYLNZUw6PcGB9 | Events: 4 (3x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:41:09 [INFO] webhooks: 📝 Webhook #73 geloggt (Duplikate erlaubt)
+2026-01-04 20:41:10 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:41:10 [INFO] webhooks:   🎯 Synchronisiere Match: tio:kKk8WdOTn1HBA
+2026-01-04 20:41:10 [INFO] webhooks:   ✅ Match tio:kKk8WdOTn1HBA synchronisiert
+2026-01-04 20:41:10 [INFO] webhooks:   🎯 Synchronisiere Match: tio:88VT0eyAgd8Fs
+2026-01-04 20:41:10 [INFO] webhooks:   ✅ Match tio:88VT0eyAgd8Fs synchronisiert
+2026-01-04 20:41:10 [INFO] webhooks:   🎯 Synchronisiere Match: tio:55PcOZOfLilut
+2026-01-04 20:41:10 [INFO] webhooks:   ✅ Match tio:55PcOZOfLilut synchronisiert
+2026-01-04 20:41:10 [INFO] webhooks:   🏓 Aktualisiere Court: tio:8Ijl0rRvDxCWh
+2026-01-04 20:41:12 [INFO] webhooks: 📨 Webhook #74 | Tournament: tio:mYLNZUw6PcGB9 | Events: 4 (3x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:41:12 [INFO] webhooks: 📝 Webhook #74 geloggt (Duplikate erlaubt)
+2026-01-04 20:41:12 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:41:12 [INFO] webhooks:   🎯 Synchronisiere Match: tio:3pOo2uFstjgzQ
+2026-01-04 20:41:12 [INFO] webhooks:   ✅ Match tio:3pOo2uFstjgzQ synchronisiert
+2026-01-04 20:41:12 [INFO] webhooks:   🎯 Synchronisiere Match: tio:88VT0eyAgd8Fs
+2026-01-04 20:41:12 [INFO] webhooks:   ✅ Match tio:88VT0eyAgd8Fs synchronisiert
+2026-01-04 20:41:12 [INFO] webhooks:   🎯 Synchronisiere Match: tio:55PcOZOfLilut
+2026-01-04 20:41:13 [INFO] webhooks:   ✅ Match tio:55PcOZOfLilut synchronisiert
+2026-01-04 20:41:13 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:41:49 [INFO] webhooks: 📨 Webhook #75 | Tournament: tio:mYLNZUw6PcGB9 | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:41:49 [INFO] webhooks: 📝 Webhook #75 geloggt (Duplikate erlaubt)
+2026-01-04 20:41:49 [INFO] webhooks: ⚡ Partial-Sync für tio:mYLNZUw6PcGB9
+2026-01-04 20:41:49 [INFO] webhooks:   🎯 Synchronisiere Match: tio:55PcOZOfLilut
+2026-01-04 20:41:49 [INFO] webhooks:   ✅ Match tio:55PcOZOfLilut synchronisiert
+2026-01-04 20:41:49 [INFO] webhooks:   🏓 Aktualisiere Court: tio:b3Y2x6utLCBNN
+2026-01-04 20:41:52 [INFO] webhooks: 📨 Webhook #76 | Tournament: tio:mYLNZUw6PcGB9 | Events: 1 (1x TournamentUpdated)
+2026-01-04 20:41:52 [INFO] webhooks: 📝 Webhook #76 geloggt (Duplikate erlaubt)
+2026-01-04 20:41:52 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:mYLNZUw6PcGB9
+2026-01-04 20:51:57 [INFO] webhooks: 📨 Webhook #77 | Tournament: tio:9KkWIDKBzAPvZ | Events: 2 (1x TournamentAdded, 1x TournamentUpdated)
+2026-01-04 20:51:58 [INFO] webhooks: 📝 Webhook #77 geloggt (Duplikate erlaubt)
+2026-01-04 20:51:58 [WARNING] webhooks: ⚠️  Tournament tio:9KkWIDKBzAPvZ nicht in DB gefunden. Führe automatischen Initial-Sync aus...
+2026-01-04 20:52:00 [ERROR] webhooks: ❌ Initial-Sync fehlgeschlagen: DB Error: (psycopg2.errors.UndefinedColumn) column entries.discipline_ids does not exist
+LINE 2: ...s_name, entries.entry_type AS entries_entry_type, entries.di...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT entries.id AS entries_id, entries.tournament_id AS entries_tournament_id, entries.name AS entries_name, entries.entry_type AS entries_entry_type, entries.discipline_ids AS entries_discipline_ids 
+FROM entries 
+WHERE entries.tournament_id = %(tournament_id_1)s) AS anon_1]
+[parameters: {'tournament_id_1': 'tio:9KkWIDKBzAPvZ'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-01-04 20:52:00 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:01 [INFO] webhooks: 📨 Webhook #78 | Tournament: tio:9KkWIDKBzAPvZ | Events: 1 (1x TournamentUpdated)
+2026-01-04 20:52:01 [INFO] webhooks: 📝 Webhook #78 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:01 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:05 [INFO] webhooks: 📨 Webhook #79 | Tournament: tio:9KkWIDKBzAPvZ | Events: 1 (1x EntryListUpdated)
+2026-01-04 20:52:05 [INFO] webhooks: 📝 Webhook #79 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:05 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:26 [INFO] webhooks: 📨 Webhook #80 | Tournament: tio:9KkWIDKBzAPvZ | Events: 1 (1x TournamentUpdated)
+2026-01-04 20:52:26 [INFO] webhooks: 📝 Webhook #80 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:26 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:28 [INFO] webhooks: 📨 Webhook #81 | Tournament: tio:9KkWIDKBzAPvZ | Events: 1 (1x TournamentUpdated)
+2026-01-04 20:52:28 [INFO] webhooks: 📝 Webhook #81 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:28 [INFO] webhooks: 🔄 Full-Sync wird ausgeführt für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:31 [INFO] webhooks: 📨 Webhook #82 | Tournament: tio:9KkWIDKBzAPvZ | Events: 2 (2x CourtMatchChanged)
+2026-01-04 20:52:31 [INFO] webhooks: 📝 Webhook #82 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:31 [INFO] webhooks: ⚡ Partial-Sync für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:31 [INFO] webhooks:   🏓 Aktualisiere Court: tio:7hkEE4JP1qDzR
+2026-01-04 20:52:31 [INFO] webhooks:   ✅ Court tio:7hkEE4JP1qDzR aktualisiert
+2026-01-04 20:52:31 [INFO] webhooks:   🏓 Aktualisiere Court: tio:nlFx0inlgX1OD
+2026-01-04 20:52:31 [INFO] webhooks:   ✅ Court tio:nlFx0inlgX1OD aktualisiert
+2026-01-04 20:52:46 [INFO] webhooks: 📨 Webhook #83 | Tournament: tio:9KkWIDKBzAPvZ | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:52:47 [INFO] webhooks: 📝 Webhook #83 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:47 [INFO] webhooks: ⚡ Partial-Sync für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:47 [INFO] webhooks:   🎯 Synchronisiere Match: tio:WNjz3KroHYgp3
+2026-01-04 20:52:49 [INFO] webhooks:   ✅ Match tio:WNjz3KroHYgp3 synchronisiert
+2026-01-04 20:52:49 [INFO] webhooks:   🏓 Aktualisiere Court: tio:7hkEE4JP1qDzR
+2026-01-04 20:52:50 [INFO] webhooks:   ✅ Court tio:7hkEE4JP1qDzR aktualisiert
+2026-01-04 20:52:50 [INFO] webhooks: 📨 Webhook #84 | Tournament: tio:9KkWIDKBzAPvZ | Events: 2 (1x MatchUpdated, 1x CourtMatchChanged)
+2026-01-04 20:52:50 [INFO] webhooks: 📝 Webhook #84 geloggt (Duplikate erlaubt)
+2026-01-04 20:52:50 [INFO] webhooks: ⚡ Partial-Sync für tio:9KkWIDKBzAPvZ
+2026-01-04 20:52:50 [INFO] webhooks:   🎯 Synchronisiere Match: tio:u75Lhej7MshNP
+2026-01-04 20:52:50 [INFO] webhooks:   ✅ Match tio:u75Lhej7MshNP synchronisiert
+2026-01-04 20:52:50 [INFO] webhooks:   🏓 Aktualisiere Court: tio:nlFx0inlgX1OD
+2026-01-04 20:52:50 [INFO] webhooks:   ✅ Court tio:nlFx0inlgX1OD aktualisiert
